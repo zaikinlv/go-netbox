@@ -83,6 +83,7 @@ if 'components' in data and 'schemas' in data['components']:
             'wirelesslan_count',
             'created',  # for sites
             'provider_count', # ASNs
+            'cable_end', # issue #195
         ] + dynamic_non_required_props
 
         if 'required' in schema:

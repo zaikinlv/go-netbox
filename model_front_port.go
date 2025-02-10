@@ -39,7 +39,7 @@ type FrontPort struct {
 	// Treat as if a cable is connected
 	MarkConnected *bool `json:"mark_connected,omitempty"`
 	Cable NullableBriefCable `json:"cable,omitempty"`
-	CableEnd string `json:"cable_end"`
+	CableEnd *string `json:"cable_end,omitempty"`
 	LinkPeers []interface{} `json:"link_peers"`
 	// Return the type of the peer link terminations, or None.
 	LinkPeersType NullableString `json:"link_peers_type,omitempty"`
@@ -57,7 +57,7 @@ type _FrontPort FrontPort
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewFrontPort(id int32, url string, display string, device BriefDevice, name string, type_ FrontPortType, rearPort FrontPortRearPort, cableEnd string, linkPeers []interface{}, occupied bool) *FrontPort {
+func NewFrontPort(id int32, url string, display string, device BriefDevice, name string, type_ FrontPortType, rearPort FrontPortRearPort, linkPeers []interface{}, occupied bool) *FrontPort {
 	this := FrontPort{}
 	this.Id = id
 	this.Url = url
@@ -66,7 +66,6 @@ func NewFrontPort(id int32, url string, display string, device BriefDevice, name
 	this.Name = name
 	this.Type = type_
 	this.RearPort = rearPort
-	this.CableEnd = cableEnd
 	this.LinkPeers = linkPeers
 	this.Occupied = occupied
 	return &this
@@ -531,30 +530,37 @@ func (o *FrontPort) UnsetCable() {
 	o.Cable.Unset()
 }
 
-// GetCableEnd returns the CableEnd field value
+// GetCableEnd returns the CableEnd field value if set, zero value otherwise.
 func (o *FrontPort) GetCableEnd() string {
-	if o == nil {
+	if o == nil || IsNil(o.CableEnd) {
 		var ret string
 		return ret
 	}
-
-	return o.CableEnd
+	return *o.CableEnd
 }
 
-// GetCableEndOk returns a tuple with the CableEnd field value
+// GetCableEndOk returns a tuple with the CableEnd field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *FrontPort) GetCableEndOk() (*string, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.CableEnd) {
 		return nil, false
 	}
-	return &o.CableEnd, true
+	return o.CableEnd, true
 }
 
-// SetCableEnd sets field value
+// HasCableEnd returns a boolean if a field has been set.
+func (o *FrontPort) HasCableEnd() bool {
+	if o != nil && !IsNil(o.CableEnd) {
+		return true
+	}
+
+	return false
+}
+
+// SetCableEnd gets a reference to the given string and assigns it to the CableEnd field.
 func (o *FrontPort) SetCableEnd(v string) {
-	o.CableEnd = v
+	o.CableEnd = &v
 }
-
 
 // GetLinkPeers returns the LinkPeers field value
 func (o *FrontPort) GetLinkPeers() []interface{} {
@@ -837,7 +843,9 @@ func (o FrontPort) ToMap() (map[string]interface{}, error) {
 	if o.Cable.IsSet() {
 		toSerialize["cable"] = o.Cable.Get()
 	}
-	toSerialize["cable_end"] = o.CableEnd
+	if !IsNil(o.CableEnd) {
+		toSerialize["cable_end"] = o.CableEnd
+	}
 	toSerialize["link_peers"] = o.LinkPeers
 	if o.LinkPeersType.IsSet() {
 		toSerialize["link_peers_type"] = o.LinkPeersType.Get()
@@ -875,7 +883,6 @@ func (o *FrontPort) UnmarshalJSON(data []byte) (err error) {
 		"name",
 		"type",
 		"rear_port",
-		"cable_end",
 		"link_peers",
 		"_occupied",
 	}

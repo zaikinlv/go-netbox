@@ -120577,7 +120577,6 @@ components:
           nullable: true
       required:
       - cable
-      - cable_end
       - display
       - id
       - termination_id
@@ -120608,7 +120607,6 @@ components:
           format: int64
       required:
       - cable
-      - cable_end
       - termination_id
       - termination_type
     Circuit:
@@ -121288,7 +121286,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - circuit
       - display
       - id
@@ -122289,7 +122286,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - connected_endpoints_reachable
       - device
       - display
@@ -122810,7 +122806,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - connected_endpoints_reachable
       - device
       - display
@@ -126802,7 +126797,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - device
       - display
       - id
@@ -130976,7 +130970,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - connected_endpoints_reachable
       - count_fhrp_groups
       - count_ipaddresses
@@ -149466,7 +149459,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - connected_endpoints_reachable
       - display
       - id
@@ -150088,7 +150080,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - connected_endpoints_reachable
       - device
       - display
@@ -151896,7 +151887,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - connected_endpoints_reachable
       - device
       - display
@@ -155082,7 +155072,6 @@ components:
           title: ' occupied'
       required:
       - _occupied
-      - cable_end
       - device
       - display
       - id

@@ -25,7 +25,7 @@ type CableTermination struct {
 	Url string `json:"url"`
 	Display string `json:"display"`
 	Cable int32 `json:"cable"`
-	CableEnd End1 `json:"cable_end"`
+	CableEnd *End1 `json:"cable_end,omitempty"`
 	TerminationType string `json:"termination_type"`
 	TerminationId int64 `json:"termination_id"`
 	Termination interface{} `json:"termination,omitempty"`
@@ -40,13 +40,12 @@ type _CableTermination CableTermination
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewCableTermination(id int32, url string, display string, cable int32, cableEnd End1, terminationType string, terminationId int64) *CableTermination {
+func NewCableTermination(id int32, url string, display string, cable int32, terminationType string, terminationId int64) *CableTermination {
 	this := CableTermination{}
 	this.Id = id
 	this.Url = url
 	this.Display = display
 	this.Cable = cable
-	this.CableEnd = cableEnd
 	this.TerminationType = terminationType
 	this.TerminationId = terminationId
 	return &this
@@ -160,30 +159,37 @@ func (o *CableTermination) SetCable(v int32) {
 }
 
 
-// GetCableEnd returns the CableEnd field value
+// GetCableEnd returns the CableEnd field value if set, zero value otherwise.
 func (o *CableTermination) GetCableEnd() End1 {
-	if o == nil {
+	if o == nil || IsNil(o.CableEnd) {
 		var ret End1
 		return ret
 	}
-
-	return o.CableEnd
+	return *o.CableEnd
 }
 
-// GetCableEndOk returns a tuple with the CableEnd field value
+// GetCableEndOk returns a tuple with the CableEnd field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *CableTermination) GetCableEndOk() (*End1, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.CableEnd) {
 		return nil, false
 	}
-	return &o.CableEnd, true
+	return o.CableEnd, true
 }
 
-// SetCableEnd sets field value
+// HasCableEnd returns a boolean if a field has been set.
+func (o *CableTermination) HasCableEnd() bool {
+	if o != nil && !IsNil(o.CableEnd) {
+		return true
+	}
+
+	return false
+}
+
+// SetCableEnd gets a reference to the given End1 and assigns it to the CableEnd field.
 func (o *CableTermination) SetCableEnd(v End1) {
-	o.CableEnd = v
+	o.CableEnd = &v
 }
-
 
 // GetTerminationType returns the TerminationType field value
 func (o *CableTermination) GetTerminationType() string {
@@ -366,7 +372,9 @@ func (o CableTermination) ToMap() (map[string]interface{}, error) {
 	toSerialize["url"] = o.Url
 	toSerialize["display"] = o.Display
 	toSerialize["cable"] = o.Cable
-	toSerialize["cable_end"] = o.CableEnd
+	if !IsNil(o.CableEnd) {
+		toSerialize["cable_end"] = o.CableEnd
+	}
 	toSerialize["termination_type"] = o.TerminationType
 	toSerialize["termination_id"] = o.TerminationId
 	if o.Termination != nil {
@@ -395,7 +403,6 @@ func (o *CableTermination) UnmarshalJSON(data []byte) (err error) {
 		"url",
 		"display",
 		"cable",
-		"cable_end",
 		"termination_type",
 		"termination_id",
 	}
