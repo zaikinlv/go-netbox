@@ -84,6 +84,9 @@ if 'components' in data and 'schemas' in data['components']:
             'created',  # for sites
             'provider_count', # ASNs
             'cable_end', # issue #195
+            'allocated_vcpus', # issue #199
+            'allocated_memory', # issue #199
+            'allocated_disk', # issue #199
         ] + dynamic_non_required_props
 
         if 'required' in schema:

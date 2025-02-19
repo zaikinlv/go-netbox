@@ -41,9 +41,9 @@ type Cluster struct {
 	LastUpdated NullableTime `json:"last_updated,omitempty"`
 	DeviceCount *int64 `json:"device_count,omitempty"`
 	VirtualmachineCount *int64 `json:"virtualmachine_count,omitempty"`
-	AllocatedVcpus float64 `json:"allocated_vcpus"`
-	AllocatedMemory int32 `json:"allocated_memory"`
-	AllocatedDisk int32 `json:"allocated_disk"`
+	AllocatedVcpus *float64 `json:"allocated_vcpus,omitempty"`
+	AllocatedMemory *int32 `json:"allocated_memory,omitempty"`
+	AllocatedDisk *int32 `json:"allocated_disk,omitempty"`
 	AdditionalProperties map[string]interface{}
 }
 
@@ -53,16 +53,13 @@ type _Cluster Cluster
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewCluster(id int32, url string, display string, name string, type_ BriefClusterType, allocatedVcpus float64, allocatedMemory int32, allocatedDisk int32) *Cluster {
+func NewCluster(id int32, url string, display string, name string, type_ BriefClusterType) *Cluster {
 	this := Cluster{}
 	this.Id = id
 	this.Url = url
 	this.Display = display
 	this.Name = name
 	this.Type = type_
-	this.AllocatedVcpus = allocatedVcpus
-	this.AllocatedMemory = allocatedMemory
-	this.AllocatedDisk = allocatedDisk
 	return &this
 }
 
@@ -740,80 +737,101 @@ func (o *Cluster) SetVirtualmachineCount(v int64) {
 	o.VirtualmachineCount = &v
 }
 
-// GetAllocatedVcpus returns the AllocatedVcpus field value
+// GetAllocatedVcpus returns the AllocatedVcpus field value if set, zero value otherwise.
 func (o *Cluster) GetAllocatedVcpus() float64 {
-	if o == nil {
+	if o == nil || IsNil(o.AllocatedVcpus) {
 		var ret float64
 		return ret
 	}
-
-	return o.AllocatedVcpus
+	return *o.AllocatedVcpus
 }
 
-// GetAllocatedVcpusOk returns a tuple with the AllocatedVcpus field value
+// GetAllocatedVcpusOk returns a tuple with the AllocatedVcpus field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Cluster) GetAllocatedVcpusOk() (*float64, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.AllocatedVcpus) {
 		return nil, false
 	}
-	return &o.AllocatedVcpus, true
+	return o.AllocatedVcpus, true
 }
 
-// SetAllocatedVcpus sets field value
+// HasAllocatedVcpus returns a boolean if a field has been set.
+func (o *Cluster) HasAllocatedVcpus() bool {
+	if o != nil && !IsNil(o.AllocatedVcpus) {
+		return true
+	}
+
+	return false
+}
+
+// SetAllocatedVcpus gets a reference to the given float64 and assigns it to the AllocatedVcpus field.
 func (o *Cluster) SetAllocatedVcpus(v float64) {
-	o.AllocatedVcpus = v
+	o.AllocatedVcpus = &v
 }
 
-
-// GetAllocatedMemory returns the AllocatedMemory field value
+// GetAllocatedMemory returns the AllocatedMemory field value if set, zero value otherwise.
 func (o *Cluster) GetAllocatedMemory() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.AllocatedMemory) {
 		var ret int32
 		return ret
 	}
-
-	return o.AllocatedMemory
+	return *o.AllocatedMemory
 }
 
-// GetAllocatedMemoryOk returns a tuple with the AllocatedMemory field value
+// GetAllocatedMemoryOk returns a tuple with the AllocatedMemory field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Cluster) GetAllocatedMemoryOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.AllocatedMemory) {
 		return nil, false
 	}
-	return &o.AllocatedMemory, true
+	return o.AllocatedMemory, true
 }
 
-// SetAllocatedMemory sets field value
+// HasAllocatedMemory returns a boolean if a field has been set.
+func (o *Cluster) HasAllocatedMemory() bool {
+	if o != nil && !IsNil(o.AllocatedMemory) {
+		return true
+	}
+
+	return false
+}
+
+// SetAllocatedMemory gets a reference to the given int32 and assigns it to the AllocatedMemory field.
 func (o *Cluster) SetAllocatedMemory(v int32) {
-	o.AllocatedMemory = v
+	o.AllocatedMemory = &v
 }
 
-
-// GetAllocatedDisk returns the AllocatedDisk field value
+// GetAllocatedDisk returns the AllocatedDisk field value if set, zero value otherwise.
 func (o *Cluster) GetAllocatedDisk() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.AllocatedDisk) {
 		var ret int32
 		return ret
 	}
-
-	return o.AllocatedDisk
+	return *o.AllocatedDisk
 }
 
-// GetAllocatedDiskOk returns a tuple with the AllocatedDisk field value
+// GetAllocatedDiskOk returns a tuple with the AllocatedDisk field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Cluster) GetAllocatedDiskOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.AllocatedDisk) {
 		return nil, false
 	}
-	return &o.AllocatedDisk, true
+	return o.AllocatedDisk, true
 }
 
-// SetAllocatedDisk sets field value
+// HasAllocatedDisk returns a boolean if a field has been set.
+func (o *Cluster) HasAllocatedDisk() bool {
+	if o != nil && !IsNil(o.AllocatedDisk) {
+		return true
+	}
+
+	return false
+}
+
+// SetAllocatedDisk gets a reference to the given int32 and assigns it to the AllocatedDisk field.
 func (o *Cluster) SetAllocatedDisk(v int32) {
-	o.AllocatedDisk = v
+	o.AllocatedDisk = &v
 }
-
 
 func (o Cluster) MarshalJSON() ([]byte, error) {
 	toSerialize,err := o.ToMap()
@@ -875,9 +893,15 @@ func (o Cluster) ToMap() (map[string]interface{}, error) {
 	if !IsNil(o.VirtualmachineCount) {
 		toSerialize["virtualmachine_count"] = o.VirtualmachineCount
 	}
-	toSerialize["allocated_vcpus"] = o.AllocatedVcpus
-	toSerialize["allocated_memory"] = o.AllocatedMemory
-	toSerialize["allocated_disk"] = o.AllocatedDisk
+	if !IsNil(o.AllocatedVcpus) {
+		toSerialize["allocated_vcpus"] = o.AllocatedVcpus
+	}
+	if !IsNil(o.AllocatedMemory) {
+		toSerialize["allocated_memory"] = o.AllocatedMemory
+	}
+	if !IsNil(o.AllocatedDisk) {
+		toSerialize["allocated_disk"] = o.AllocatedDisk
+	}
 
 	for key, value := range o.AdditionalProperties {
 		toSerialize[key] = value
@@ -896,9 +920,6 @@ func (o *Cluster) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"name",
 		"type",
-		"allocated_vcpus",
-		"allocated_memory",
-		"allocated_disk",
 	}
 
 	// defaultValueFuncMap captures the default values for required properties.

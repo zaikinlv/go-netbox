@@ -66,6 +66,10 @@ func randString(n int) string {
 }
 
 func fatalHttp(t *testing.T, msg string, err error, res *http.Response) {
+	if res == nil {
+		t.Fatalf("%s: %v", msg, err)
+		return
+	}
 	body, _ := io.ReadAll(res.Body)
 	t.Fatalf("%s: %v\n response: %v", msg, err, string(body))
 }

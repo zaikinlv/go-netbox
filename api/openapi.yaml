@@ -121557,9 +121557,6 @@ components:
           type: integer
           readOnly: true
       required:
-      - allocated_disk
-      - allocated_memory
-      - allocated_vcpus
       - display
       - id
       - name
