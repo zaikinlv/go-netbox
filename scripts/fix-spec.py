@@ -87,6 +87,7 @@ if 'components' in data and 'schemas' in data['components']:
             'allocated_vcpus', # issue #199
             'allocated_memory', # issue #199
             'allocated_disk', # issue #199
+            'tagged_items', # issue #205
         ] + dynamic_non_required_props
 
         if 'required' in schema:
