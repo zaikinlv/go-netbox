@@ -79,7 +79,6 @@ func HSeed205(t *testing.T, client *netbox.APIClient) *Seed205 {
 	tagRequest := &netbox.TagRequest{
 		Name:        randString(10),
 		Slug:        randString(10),
-		Color:       "112233",
 		Description: netbox.PtrString("This is a test"),
 	}
 
@@ -104,7 +103,6 @@ func Test205(t *testing.T) {
 	tagRequest := &netbox.TagRequest{
 		Name:        randString(10),
 		Slug:        randString(10),
-		Color:       "112233",
 		Description: netbox.PtrString("This is a test"),
 	}
 
