@@ -475,7 +475,6 @@ func (o *Tag) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"name",
 		"slug",
-		"tagged_items",
 	}
 
 	// defaultValueFuncMap captures the default values for required properties.
