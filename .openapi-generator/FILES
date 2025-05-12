@@ -61,8 +61,6 @@ model_brief_cluster_type_request.go
 model_brief_config_template.go
 model_brief_config_template_request.go
 model_brief_contact.go
-model_brief_contact_group.go
-model_brief_contact_group_request.go
 model_brief_contact_request.go
 model_brief_contact_role.go
 model_brief_contact_role_request.go
@@ -116,7 +114,10 @@ model_brief_manufacturer_request.go
 model_brief_module.go
 model_brief_module_request.go
 model_brief_module_type.go
+model_brief_module_type_profile.go
+model_brief_module_type_profile_request.go
 model_brief_module_type_request.go
+model_brief_module_type_request_profile.go
 model_brief_platform.go
 model_brief_platform_request.go
 model_brief_power_panel.go
@@ -149,6 +150,7 @@ model_brief_site.go
 model_brief_site_group.go
 model_brief_site_group_request.go
 model_brief_site_request.go
+model_brief_tag.go
 model_brief_tenant.go
 model_brief_tenant_group.go
 model_brief_tenant_group_request.go
@@ -257,7 +259,6 @@ model_contact_assignment_request_role.go
 model_contact_group.go
 model_contact_group_request.go
 model_contact_request.go
-model_contact_request_group.go
 model_contact_role.go
 model_contact_role_request.go
 model_core_object_changes_list_action_parameter.go
@@ -292,6 +293,7 @@ model_data_source_request.go
 model_data_source_status.go
 model_data_source_status_label.go
 model_data_source_status_value.go
+model_data_source_sync_interval.go
 model_data_source_type.go
 model_data_source_type_label.go
 model_data_source_type_value.go
@@ -493,6 +495,9 @@ model_journal_entry_kind_value.go
 model_journal_entry_request.go
 model_l2_vpn.go
 model_l2_vpn_request.go
+model_l2_vpn_status.go
+model_l2_vpn_status_label.go
+model_l2_vpn_status_value.go
 model_l2_vpn_termination.go
 model_l2_vpn_termination_request.go
 model_location.go
@@ -515,12 +520,16 @@ model_module_type.go
 model_module_type_airflow.go
 model_module_type_airflow_label.go
 model_module_type_airflow_value.go
+model_module_type_profile.go
+model_module_type_profile_request.go
 model_module_type_request.go
 model_module_type_request_airflow.go
 model_nested_contact_group.go
 model_nested_contact_group_request.go
 model_nested_device.go
 model_nested_device_request.go
+model_nested_device_role.go
+model_nested_device_role_request.go
 model_nested_group.go
 model_nested_interface.go
 model_nested_interface_request.go
@@ -628,6 +637,7 @@ model_paginated_module_bay_list.go
 model_paginated_module_bay_template_list.go
 model_paginated_module_list.go
 model_paginated_module_type_list.go
+model_paginated_module_type_profile_list.go
 model_paginated_notification_group_list.go
 model_paginated_notification_list.go
 model_paginated_object_change_list.go
@@ -662,7 +672,9 @@ model_paginated_service_template_list.go
 model_paginated_site_group_list.go
 model_paginated_site_list.go
 model_paginated_subscription_list.go
+model_paginated_table_config_list.go
 model_paginated_tag_list.go
+model_paginated_tagged_item_list.go
 model_paginated_tenant_group_list.go
 model_paginated_tenant_list.go
 model_paginated_token_list.go
@@ -706,7 +718,6 @@ model_patched_custom_link_request.go
 model_patched_dashboard_request.go
 model_patched_device_bay_request.go
 model_patched_device_bay_template_request.go
-model_patched_device_role_request.go
 model_patched_export_template_request.go
 model_patched_fhrp_group_assignment_request.go
 model_patched_fhrp_group_request.go
@@ -719,6 +730,7 @@ model_patched_mac_address_request.go
 model_patched_manufacturer_request.go
 model_patched_module_bay_request.go
 model_patched_module_bay_template_request.go
+model_patched_module_type_profile_request.go
 model_patched_notification_group_request.go
 model_patched_notification_request.go
 model_patched_object_permission_request.go
@@ -736,6 +748,7 @@ model_patched_route_target_request.go
 model_patched_saved_filter_request.go
 model_patched_script_input_request.go
 model_patched_subscription_request.go
+model_patched_table_config_request.go
 model_patched_tag_request.go
 model_patched_tenant_request.go
 model_patched_tenant_request_group.go
@@ -774,6 +787,7 @@ model_patched_writable_custom_field_request_type.go
 model_patched_writable_custom_field_request_ui_editable.go
 model_patched_writable_custom_field_request_ui_visible.go
 model_patched_writable_data_source_request.go
+model_patched_writable_device_role_request.go
 model_patched_writable_device_type_request.go
 model_patched_writable_device_with_config_context_request.go
 model_patched_writable_event_rule_request.go
@@ -812,6 +826,7 @@ model_patched_writable_power_feed_request_type.go
 model_patched_writable_power_outlet_request.go
 model_patched_writable_power_outlet_request_feed_leg.go
 model_patched_writable_power_outlet_request_power_port.go
+model_patched_writable_power_outlet_request_status.go
 model_patched_writable_power_outlet_request_type.go
 model_patched_writable_power_outlet_template_request.go
 model_patched_writable_power_outlet_template_request_power_port.go
@@ -837,7 +852,6 @@ model_patched_writable_rear_port_template_request.go
 model_patched_writable_region_request.go
 model_patched_writable_service_request.go
 model_patched_writable_service_request_protocol.go
-model_patched_writable_service_request_virtual_machine.go
 model_patched_writable_service_template_request.go
 model_patched_writable_site_group_request.go
 model_patched_writable_site_request.go
@@ -891,6 +905,8 @@ model_power_outlet_feed_leg_label.go
 model_power_outlet_feed_leg_value.go
 model_power_outlet_request.go
 model_power_outlet_request_feed_leg.go
+model_power_outlet_status.go
+model_power_outlet_status_label.go
 model_power_outlet_template.go
 model_power_outlet_template_request.go
 model_power_outlet_type.go
@@ -974,8 +990,11 @@ model_site_group_request.go
 model_site_request.go
 model_subscription.go
 model_subscription_request.go
+model_table_config.go
+model_table_config_request.go
 model_tag.go
 model_tag_request.go
+model_tagged_item.go
 model_tenant.go
 model_tenant_group.go
 model_tenant_group_request.go
@@ -1066,6 +1085,7 @@ model_writable_contact_group_request.go
 model_writable_custom_field_choice_set_request.go
 model_writable_custom_field_request.go
 model_writable_data_source_request.go
+model_writable_device_role_request.go
 model_writable_device_type_request.go
 model_writable_device_with_config_context_request.go
 model_writable_event_rule_request.go

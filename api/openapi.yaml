@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: NetBox REST API
-  version: 4.2.9-Docker-3.2.1 (4.2)
+  version: 4.3.0-Docker-3.3.0 (4.3)
   license:
     name: Apache v2 License
 paths:
@@ -395,6 +395,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -1129,6 +1145,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -2138,6 +2170,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -3182,6 +3230,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -4366,6 +4430,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -5375,6 +5455,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -6125,6 +6221,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -7039,6 +7151,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -7789,6 +7917,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -8634,6 +8778,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -9450,6 +9610,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -11121,6 +11297,106 @@ paths:
         explode: true
         style: form
       - in: query
+        name: sync_interval
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__ic
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__ie
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__iew
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__isw
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__n
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__nic
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__nie
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__niew
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
+        name: sync_interval__nisw
+        schema:
+          type: array
+          items:
+            type: integer
+            x-spec-enum-id: 2e9f2567ecd93fbe
+            nullable: true
+        explode: true
+        style: form
+      - in: query
         name: tag
         schema:
           type: array
@@ -11134,6 +11410,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -13825,6 +14117,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -16034,6 +16342,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: type
         schema:
           type: array
@@ -18163,6 +18487,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: type
         schema:
           type: array
@@ -20189,6 +20529,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -20456,6 +20812,38 @@ paths:
       operationId: dcim_device_roles_list
       description: Get a list of device role objects.
       parameters:
+      - in: query
+        name: ancestor
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: ancestor__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: ancestor_id
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: ancestor_id__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
       - in: query
         name: color
         schema:
@@ -20941,6 +21329,44 @@ paths:
         schema:
           type: string
       - in: query
+        name: parent
+        schema:
+          type: array
+          items:
+            type: string
+        description: Parent device role (slug)
+        explode: true
+        style: form
+      - in: query
+        name: parent__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Parent device role (slug)
+        explode: true
+        style: form
+      - in: query
+        name: parent_id
+        schema:
+          type: array
+          items:
+            type: integer
+            nullable: true
+        description: Parent device role (ID)
+        explode: true
+        style: form
+      - in: query
+        name: parent_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            nullable: true
+        description: Parent device role (ID)
+        explode: true
+        style: form
+      - in: query
         name: q
         schema:
           type: string
@@ -21046,6 +21472,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -21075,10 +21517,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/DeviceRoleRequest'
+              $ref: '#/components/schemas/WritableDeviceRoleRequest'
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/DeviceRoleRequest'
+              $ref: '#/components/schemas/WritableDeviceRoleRequest'
         required: true
       security:
       - cookieAuth: []
@@ -21213,10 +21655,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/DeviceRoleRequest'
+              $ref: '#/components/schemas/WritableDeviceRoleRequest'
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/DeviceRoleRequest'
+              $ref: '#/components/schemas/WritableDeviceRoleRequest'
         required: true
       security:
       - cookieAuth: []
@@ -21244,10 +21686,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/PatchedDeviceRoleRequest'
+              $ref: '#/components/schemas/PatchedWritableDeviceRoleRequest'
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/PatchedDeviceRoleRequest'
+              $ref: '#/components/schemas/PatchedWritableDeviceRoleRequest'
       security:
       - cookieAuth: []
       - tokenAuth: []
@@ -22618,6 +23060,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -24873,7 +25331,6 @@ paths:
           type: array
           items:
             type: string
-        description: Role (slug)
         explode: true
         style: form
       - in: query
@@ -24882,7 +25339,6 @@ paths:
           type: array
           items:
             type: string
-        description: Role (slug)
         explode: true
         style: form
       - in: query
@@ -24890,8 +25346,7 @@ paths:
         schema:
           type: array
           items:
-            type: integer
-        description: Role (ID)
+            type: string
         explode: true
         style: form
       - in: query
@@ -24899,8 +25354,7 @@ paths:
         schema:
           type: array
           items:
-            type: integer
-        description: Role (ID)
+            type: string
         explode: true
         style: form
       - in: query
@@ -25163,6 +25617,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -27722,6 +28192,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -31339,6 +31825,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tx_power
         schema:
           type: array
@@ -32666,6 +33168,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -35249,6 +35767,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -36402,6 +36936,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -37217,6 +37767,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -38039,6 +38605,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -40102,6 +40684,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -40355,6 +40953,655 @@ paths:
         schema:
           type: integer
         description: A unique integer value identifying this module bay.
+        required: true
+      tags:
+      - dcim
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/dcim/module-type-profiles/:
+    get:
+      operationId: dcim_module_type_profiles_list
+      description: Get a list of module type profile objects.
+      parameters:
+      - in: query
+        name: created
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__empty
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__gt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__gte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__lt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__lte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__n
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created_by_request
+        schema:
+          type: string
+          format: uuid
+      - in: query
+        name: description
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__empty
+        schema:
+          type: boolean
+      - in: query
+        name: description__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: id
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__empty
+        schema:
+          type: boolean
+      - in: query
+        name: id__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: last_updated
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__empty
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__gt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__gte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__lt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__lte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__n
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - name: limit
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      - in: query
+        name: modified_by_request
+        schema:
+          type: string
+          format: uuid
+      - in: query
+        name: name
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__empty
+        schema:
+          type: boolean
+      - in: query
+        name: name__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - name: offset
+        required: false
+        in: query
+        description: The initial index from which to return the results.
+        schema:
+          type: integer
+      - name: ordering
+        required: false
+        in: query
+        description: Which field to use when ordering the results.
+        schema:
+          type: string
+      - in: query
+        name: q
+        schema:
+          type: string
+        description: Search
+      - in: query
+        name: tag
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: updated_by_request
+        schema:
+          type: string
+          format: uuid
+      tags:
+      - dcim
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedModuleTypeProfileList'
+          description: ''
+    post:
+      operationId: dcim_module_type_profiles_create
+      description: Post a list of module type profile objects.
+      tags:
+      - dcim
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModuleTypeProfileRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ModuleTypeProfileRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModuleTypeProfile'
+          description: ''
+    put:
+      operationId: dcim_module_type_profiles_bulk_update
+      description: Put a list of module type profile objects.
+      tags:
+      - dcim
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/ModuleTypeProfileRequest'
+          multipart/form-data:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/ModuleTypeProfileRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ModuleTypeProfile'
+          description: ''
+    patch:
+      operationId: dcim_module_type_profiles_bulk_partial_update
+      description: Patch a list of module type profile objects.
+      tags:
+      - dcim
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/ModuleTypeProfileRequest'
+          multipart/form-data:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/ModuleTypeProfileRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ModuleTypeProfile'
+          description: ''
+    delete:
+      operationId: dcim_module_type_profiles_bulk_destroy
+      description: Delete a list of module type profile objects.
+      tags:
+      - dcim
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/ModuleTypeProfileRequest'
+          multipart/form-data:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/ModuleTypeProfileRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/dcim/module-type-profiles/{id}/:
+    get:
+      operationId: dcim_module_type_profiles_retrieve
+      description: Get a module type profile object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this module type profile.
+        required: true
+      tags:
+      - dcim
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModuleTypeProfile'
+          description: ''
+    put:
+      operationId: dcim_module_type_profiles_update
+      description: Put a module type profile object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this module type profile.
+        required: true
+      tags:
+      - dcim
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModuleTypeProfileRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ModuleTypeProfileRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModuleTypeProfile'
+          description: ''
+    patch:
+      operationId: dcim_module_type_profiles_partial_update
+      description: Patch a module type profile object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this module type profile.
+        required: true
+      tags:
+      - dcim
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedModuleTypeProfileRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedModuleTypeProfileRequest'
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModuleTypeProfile'
+          description: ''
+    delete:
+      operationId: dcim_module_type_profiles_destroy
+      description: Delete a module type profile object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this module type profile.
         required: true
       tags:
       - dcim
@@ -40924,6 +42171,44 @@ paths:
           type: boolean
         description: Has power ports
       - in: query
+        name: profile
+        schema:
+          type: array
+          items:
+            type: string
+        description: Profile (name)
+        explode: true
+        style: form
+      - in: query
+        name: profile__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Profile (name)
+        explode: true
+        style: form
+      - in: query
+        name: profile_id
+        schema:
+          type: array
+          items:
+            type: integer
+            nullable: true
+        description: Profile (ID)
+        explode: true
+        style: form
+      - in: query
+        name: profile_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            nullable: true
+        description: Profile (ID)
+        explode: true
+        style: form
+      - in: query
         name: q
         schema:
           type: string
@@ -40942,6 +42227,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -42130,6 +43431,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -42904,6 +44221,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -44011,6 +45344,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -46499,6 +47848,100 @@ paths:
         explode: true
         style: form
       - in: query
+        name: status
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__empty
+        schema:
+          type: boolean
+      - in: query
+        name: status__ic
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__ie
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__iew
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__isw
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__n
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__nic
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__nie
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__niew
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
+        name: status__nisw
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 1024f7deaed962d7
+        explode: true
+        style: form
+      - in: query
         name: tag
         schema:
           type: array
@@ -46512,6 +47955,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -47487,6 +48946,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -49711,6 +51186,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: type
         schema:
           type: array
@@ -50581,6 +52072,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -51492,6 +52999,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -52415,6 +53938,64 @@ paths:
         explode: true
         style: form
       - in: query
+        name: outer_height
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__empty
+        schema:
+          type: boolean
+      - in: query
+        name: outer_height__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
         name: outer_unit
         schema:
           type: string
@@ -52645,6 +54226,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -54076,6 +55673,64 @@ paths:
         explode: true
         style: form
       - in: query
+        name: outer_height
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__empty
+        schema:
+          type: boolean
+      - in: query
+        name: outer_height__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: outer_height__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
         name: outer_unit
         schema:
           type: string
@@ -54576,6 +56231,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -57258,6 +58929,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: type
         schema:
           type: array
@@ -58250,6 +59937,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -59086,6 +60789,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -60258,6 +61977,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -61323,6 +63058,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -62272,6 +64023,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -64296,6 +66063,10 @@ paths:
       description: Get a list of config template objects.
       parameters:
       - in: query
+        name: as_attachment
+        schema:
+          type: boolean
+      - in: query
         name: auto_sync_enabled
         schema:
           type: boolean
@@ -64550,6 +66321,174 @@ paths:
         explode: true
         style: form
       - in: query
+        name: file_extension
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__empty
+        schema:
+          type: boolean
+      - in: query
+        name: file_extension__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_extension__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__empty
+        schema:
+          type: boolean
+      - in: query
+        name: file_name__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
         name: id
         schema:
           type: array
@@ -64677,6 +66616,90 @@ paths:
         schema:
           type: integer
       - in: query
+        name: mime_type
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__empty
+        schema:
+          type: boolean
+      - in: query
+        name: mime_type__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: mime_type__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
         name: modified_by_request
         schema:
           type: string
@@ -64796,6 +66819,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -68743,6 +70782,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -69310,6 +71365,90 @@ paths:
         style: form
       - in: query
         name: file_extension__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__empty
+        schema:
+          type: boolean
+      - in: query
+        name: file_name__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: file_name__nisw
         schema:
           type: array
           items:
@@ -71069,6 +73208,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -73294,6 +75449,1074 @@ paths:
       responses:
         '204':
           description: No response body
+  /api/extras/table-configs/:
+    get:
+      operationId: extras_table_configs_list
+      description: Get a list of table config objects.
+      parameters:
+      - in: query
+        name: created
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__empty
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__gt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__gte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__lt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__lte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__n
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created_by_request
+        schema:
+          type: string
+          format: uuid
+      - in: query
+        name: description
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__empty
+        schema:
+          type: boolean
+      - in: query
+        name: description__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: description__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: enabled
+        schema:
+          type: boolean
+      - in: query
+        name: id
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__empty
+        schema:
+          type: boolean
+      - in: query
+        name: id__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: last_updated
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__empty
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__gt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__gte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__lt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__lte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__n
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - name: limit
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      - in: query
+        name: modified_by_request
+        schema:
+          type: string
+          format: uuid
+      - in: query
+        name: name
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__empty
+        schema:
+          type: boolean
+      - in: query
+        name: name__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: name__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: object_type
+        schema:
+          type: string
+      - in: query
+        name: object_type__n
+        schema:
+          type: string
+      - in: query
+        name: object_type_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: object_type_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - name: offset
+        required: false
+        in: query
+        description: The initial index from which to return the results.
+        schema:
+          type: integer
+      - name: ordering
+        required: false
+        in: query
+        description: Which field to use when ordering the results.
+        schema:
+          type: string
+      - in: query
+        name: q
+        schema:
+          type: string
+        description: Search
+      - in: query
+        name: shared
+        schema:
+          type: boolean
+      - in: query
+        name: table
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__empty
+        schema:
+          type: boolean
+      - in: query
+        name: table__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: table__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: updated_by_request
+        schema:
+          type: string
+          format: uuid
+      - in: query
+        name: usable
+        schema:
+          type: boolean
+      - in: query
+        name: user
+        schema:
+          type: array
+          items:
+            type: string
+        description: User (name)
+        explode: true
+        style: form
+      - in: query
+        name: user__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: User (name)
+        explode: true
+        style: form
+      - in: query
+        name: user_id
+        schema:
+          type: array
+          items:
+            type: integer
+            nullable: true
+        description: User (ID)
+        explode: true
+        style: form
+      - in: query
+        name: user_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            nullable: true
+        description: User (ID)
+        explode: true
+        style: form
+      - in: query
+        name: weight
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__empty
+        schema:
+          type: boolean
+      - in: query
+        name: weight__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      tags:
+      - extras
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedTableConfigList'
+          description: ''
+    post:
+      operationId: extras_table_configs_create
+      description: Post a list of table config objects.
+      tags:
+      - extras
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TableConfigRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TableConfigRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TableConfig'
+          description: ''
+    put:
+      operationId: extras_table_configs_bulk_update
+      description: Put a list of table config objects.
+      tags:
+      - extras
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/TableConfigRequest'
+          multipart/form-data:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/TableConfigRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TableConfig'
+          description: ''
+    patch:
+      operationId: extras_table_configs_bulk_partial_update
+      description: Patch a list of table config objects.
+      tags:
+      - extras
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/TableConfigRequest'
+          multipart/form-data:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/TableConfigRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TableConfig'
+          description: ''
+    delete:
+      operationId: extras_table_configs_bulk_destroy
+      description: Delete a list of table config objects.
+      tags:
+      - extras
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/TableConfigRequest'
+          multipart/form-data:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/TableConfigRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/extras/table-configs/{id}/:
+    get:
+      operationId: extras_table_configs_retrieve
+      description: Get a table config object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this table config.
+        required: true
+      tags:
+      - extras
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TableConfig'
+          description: ''
+    put:
+      operationId: extras_table_configs_update
+      description: Put a table config object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this table config.
+        required: true
+      tags:
+      - extras
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TableConfigRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/TableConfigRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TableConfig'
+          description: ''
+    patch:
+      operationId: extras_table_configs_partial_update
+      description: Patch a table config object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this table config.
+        required: true
+      tags:
+      - extras
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedTableConfigRequest'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PatchedTableConfigRequest'
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TableConfig'
+          description: ''
+    delete:
+      operationId: extras_table_configs_destroy
+      description: Delete a table config object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this table config.
+        required: true
+      tags:
+      - extras
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /api/extras/tagged-objects/:
+    get:
+      operationId: extras_tagged_objects_list
+      description: Get a list of tagged item objects.
+      parameters:
+      - in: query
+        name: id
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__empty
+        schema:
+          type: boolean
+      - in: query
+        name: id__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - name: limit
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      - in: query
+        name: object_id
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: object_id__empty
+        schema:
+          type: boolean
+      - in: query
+        name: object_id__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: object_id__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: object_id__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: object_id__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: object_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: object_type
+        schema:
+          type: string
+      - in: query
+        name: object_type__n
+        schema:
+          type: string
+      - in: query
+        name: object_type_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: object_type_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - name: offset
+        required: false
+        in: query
+        description: The initial index from which to return the results.
+        schema:
+          type: integer
+      - name: ordering
+        required: false
+        in: query
+        description: Which field to use when ordering the results.
+        schema:
+          type: string
+      - in: query
+        name: q
+        schema:
+          type: string
+        description: Search
+      - in: query
+        name: tag
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      tags:
+      - extras
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedTaggedItemList'
+          description: ''
+  /api/extras/tagged-objects/{id}/:
+    get:
+      operationId: extras_tagged_objects_retrieve
+      description: Get a tagged item object.
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        description: A unique integer value identifying this tagged item.
+        required: true
+      tags:
+      - extras
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaggedItem'
+          description: ''
   /api/extras/tags/:
     get:
       operationId: extras_tags_list
@@ -73899,6 +77122,64 @@ paths:
         schema:
           type: string
           format: uuid
+      - in: query
+        name: weight
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__empty
+        schema:
+          type: boolean
+      - in: query
+        name: weight__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: weight__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
       tags:
       - extras
       security:
@@ -74886,6 +78167,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -75587,6 +78884,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -76529,6 +79842,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -77403,6 +80732,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -79087,6 +82432,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -80218,6 +83579,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -80963,6 +84340,10 @@ paths:
         schema:
           type: integer
       - in: query
+        name: mark_populated
+        schema:
+          type: boolean
+      - in: query
         name: mark_utilized
         schema:
           type: boolean
@@ -81218,6 +84599,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -82510,6 +85907,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -83564,6 +86977,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -84278,6 +87707,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -85140,6 +88585,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -85861,6 +89322,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -86302,18 +89779,6 @@ paths:
           type: array
           items:
             type: string
-            nullable: true
-        description: Device (name)
-        explode: true
-        style: form
-      - in: query
-        name: device__n
-        schema:
-          type: array
-          items:
-            type: string
-            nullable: true
-        description: Device (name)
         explode: true
         style: form
       - in: query
@@ -86322,18 +89787,24 @@ paths:
           type: array
           items:
             type: integer
-            nullable: true
-        description: Device (ID)
+            format: int32
         explode: true
         style: form
       - in: query
-        name: device_id__n
+        name: fhrpgroup
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: fhrpgroup_id
         schema:
           type: array
           items:
             type: integer
-            nullable: true
-        description: Device (ID)
+            format: int32
         explode: true
         style: form
       - in: query
@@ -86601,6 +90072,72 @@ paths:
         schema:
           type: string
       - in: query
+        name: parent_object_id
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: parent_object_id__empty
+        schema:
+          type: boolean
+      - in: query
+        name: parent_object_id__gt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: parent_object_id__gte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: parent_object_id__lt
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: parent_object_id__lte
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: parent_object_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int32
+        explode: true
+        style: form
+      - in: query
+        name: parent_object_type
+        schema:
+          type: integer
+      - in: query
+        name: parent_object_type__n
+        schema:
+          type: integer
+      - in: query
         name: port
         schema:
           type: number
@@ -86640,6 +90177,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -86650,16 +90203,6 @@ paths:
           type: array
           items:
             type: string
-        description: Virtual machine (name)
-        explode: true
-        style: form
-      - in: query
-        name: virtual_machine__n
-        schema:
-          type: array
-          items:
-            type: string
-        description: Virtual machine (name)
         explode: true
         style: form
       - in: query
@@ -86668,18 +90211,7 @@ paths:
           type: array
           items:
             type: integer
-            nullable: true
-        description: Virtual machine (ID)
-        explode: true
-        style: form
-      - in: query
-        name: virtual_machine_id__n
-        schema:
-          type: array
-          items:
-            type: integer
-            nullable: true
-        description: Virtual machine (ID)
+            format: int32
         explode: true
         style: form
       tags:
@@ -87493,6 +91025,92 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tenant
+        schema:
+          type: array
+          items:
+            type: string
+        description: Tenant (slug)
+        explode: true
+        style: form
+      - in: query
+        name: tenant__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Tenant (slug)
+        explode: true
+        style: form
+      - in: query
+        name: tenant_group
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tenant_group__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tenant_group_id
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tenant_group_id__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tenant_id
+        schema:
+          type: array
+          items:
+            type: integer
+            nullable: true
+        description: Tenant (ID)
+        explode: true
+        style: form
+      - in: query
+        name: tenant_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+            nullable: true
+        description: Tenant (ID)
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -88183,6 +91801,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -88884,6 +92518,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -90070,6 +93720,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -90996,6 +94662,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -91791,6 +95473,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -92052,6 +95750,24 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: contact_id
+        schema:
+          type: array
+          items:
+            type: integer
+        description: Contact (ID)
+        explode: true
+        style: form
+      - in: query
+        name: contact_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        description: Contact (ID)
         explode: true
         style: form
       - in: query
@@ -92575,6 +96291,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -93292,6 +97024,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -94296,6 +98044,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: title
         schema:
           type: array
@@ -95167,6 +98931,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -95965,6 +99745,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -99406,6 +103202,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -100120,6 +103932,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -101135,6 +104963,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -102286,6 +106130,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -103096,6 +106956,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -104385,7 +108261,6 @@ paths:
           type: array
           items:
             type: string
-        description: Role (slug)
         explode: true
         style: form
       - in: query
@@ -104394,7 +108269,6 @@ paths:
           type: array
           items:
             type: string
-        description: Role (slug)
         explode: true
         style: form
       - in: query
@@ -104402,9 +108276,7 @@ paths:
         schema:
           type: array
           items:
-            type: integer
-            nullable: true
-        description: Role (ID)
+            type: string
         explode: true
         style: form
       - in: query
@@ -104412,9 +108284,7 @@ paths:
         schema:
           type: array
           items:
-            type: integer
-            nullable: true
-        description: Role (ID)
+            type: string
         explode: true
         style: form
       - in: query
@@ -104679,6 +108549,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -105716,6 +109602,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -106928,6 +110830,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -107700,6 +111618,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -108499,6 +112433,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -109515,6 +113465,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -110187,6 +114153,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -111216,6 +115198,100 @@ paths:
         explode: true
         style: form
       - in: query
+        name: status
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__empty
+        schema:
+          type: boolean
+      - in: query
+        name: status__ic
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__ie
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__iew
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__isw
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__n
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__nic
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__nie
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__niew
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
+        name: status__nisw
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: 937bacafb9d5d4bb
+        explode: true
+        style: form
+      - in: query
         name: tag
         schema:
           type: array
@@ -111229,6 +115305,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -111307,7 +115399,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111320,7 +115412,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111329,7 +115421,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111338,7 +115430,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111347,7 +115439,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111356,7 +115448,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111365,7 +115457,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111374,7 +115466,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111383,7 +115475,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -111392,7 +115484,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4c9738ba3d741dd4
+            x-spec-enum-id: 730136816a2885f9
         explode: true
         style: form
       - in: query
@@ -112165,6 +116257,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: updated_by_request
         schema:
           type: string
@@ -112775,6 +116883,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -113865,6 +117989,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -114773,6 +118913,22 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
         explode: true
         style: form
       - in: query
@@ -116061,6 +120217,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -117296,6 +121468,22 @@ paths:
         explode: true
         style: form
       - in: query
+        name: tag_id
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
+        name: tag_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        explode: true
+        style: form
+      - in: query
         name: tenant
         schema:
           type: array
@@ -118520,64 +122708,6 @@ components:
       - id
       - name
       - url
-    BriefContactGroup:
-      type: object
-      description: Extends PrimaryModelSerializer to include MPTT support.
-      properties:
-        id:
-          type: integer
-          readOnly: true
-        url:
-          type: string
-          format: uri
-          readOnly: true
-        display:
-          type: string
-          readOnly: true
-        name:
-          type: string
-          maxLength: 100
-        slug:
-          type: string
-          maxLength: 100
-          pattern: ^[-a-zA-Z0-9_]+$
-        description:
-          type: string
-          maxLength: 200
-        contact_count:
-          type: integer
-          readOnly: true
-          default: 0
-        _depth:
-          type: integer
-          readOnly: true
-          title: ' depth'
-      required:
-      - _depth
-      - display
-      - id
-      - name
-      - slug
-      - url
-    BriefContactGroupRequest:
-      type: object
-      description: Extends PrimaryModelSerializer to include MPTT support.
-      properties:
-        name:
-          type: string
-          minLength: 1
-          maxLength: 100
-        slug:
-          type: string
-          minLength: 1
-          maxLength: 100
-          pattern: ^[-a-zA-Z0-9_]+$
-        description:
-          type: string
-          maxLength: 200
-      required:
-      - name
-      - slug
     BriefContactRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -118786,7 +122916,7 @@ components:
           maxLength: 200
     BriefDeviceRole:
       type: object
-      description: Adds support for custom fields and tags.
+      description: Extends PrimaryModelSerializer to include MPTT support.
       properties:
         id:
           type: integer
@@ -118816,7 +122946,12 @@ components:
           type: integer
           format: int64
           readOnly: true
+        _depth:
+          type: integer
+          readOnly: true
+          title: ' depth'
       required:
+      - _depth
       - display
       - id
       - name
@@ -118824,7 +122959,7 @@ components:
       - url
     BriefDeviceRoleRequest:
       type: object
-      description: Adds support for custom fields and tags.
+      description: Extends PrimaryModelSerializer to include MPTT support.
       properties:
         name:
           type: string
@@ -119378,6 +123513,7 @@ components:
               - evp-lan
               - ep-tree
               - evp-tree
+              - spb
               type: string
               description: '* `vpws` - VPWS
 
@@ -119403,8 +123539,10 @@ components:
 
                 * `ep-tree` - Ethernet Private Tree
 
-                * `evp-tree` - Ethernet Virtual Private Tree'
-              x-spec-enum-id: 4c9738ba3d741dd4
+                * `evp-tree` - Ethernet Virtual Private Tree
+
+                * `spb` - SPB'
+              x-spec-enum-id: 730136816a2885f9
             label:
               type: string
               enum:
@@ -119421,6 +123559,7 @@ components:
               - Ethernet Virtual Private LAN
               - Ethernet Private Tree
               - Ethernet Virtual Private Tree
+              - SPB
         description:
           type: string
           maxLength: 200
@@ -119464,6 +123603,7 @@ components:
           - evp-lan
           - ep-tree
           - evp-tree
+          - spb
           type: string
           description: '* `vpws` - VPWS
 
@@ -119489,8 +123629,10 @@ components:
 
             * `ep-tree` - Ethernet Private Tree
 
-            * `evp-tree` - Ethernet Virtual Private Tree'
-          x-spec-enum-id: 4c9738ba3d741dd4
+            * `evp-tree` - Ethernet Virtual Private Tree
+
+            * `spb` - SPB'
+          x-spec-enum-id: 730136816a2885f9
         description:
           type: string
           maxLength: 200
@@ -119725,6 +123867,10 @@ components:
         display:
           type: string
           readOnly: true
+        profile:
+          allOf:
+          - $ref: '#/components/schemas/BriefModuleTypeProfile'
+          nullable: true
         manufacturer:
           $ref: '#/components/schemas/BriefManufacturer'
         model:
@@ -119739,10 +123885,55 @@ components:
       - manufacturer
       - model
       - url
+    BriefModuleTypeProfile:
+      type: object
+      description: Adds support for custom fields and tags.
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        url:
+          type: string
+          format: uri
+          readOnly: true
+        display:
+          type: string
+          readOnly: true
+        name:
+          type: string
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 200
+      required:
+      - display
+      - id
+      - name
+      - url
+    BriefModuleTypeProfileRequest:
+      type: object
+      description: Adds support for custom fields and tags.
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 200
+      required:
+      - name
     BriefModuleTypeRequest:
       type: object
       description: Adds support for custom fields and tags.
       properties:
+        profile:
+          oneOf:
+          - type: integer
+          - allOf:
+            - $ref: '#/components/schemas/BriefModuleTypeProfileRequest'
+            nullable: true
+          nullable: true
         manufacturer:
           oneOf:
           - type: integer
@@ -120578,6 +124769,43 @@ components:
       required:
       - name
       - slug
+    BriefTag:
+      type: object
+      description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
+        on a copy of the associated instance during
+
+        validation. (DRF does not do this by default; see https://github.com/encode/django-rest-framework/issues/3144)'
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        url:
+          type: string
+          format: uri
+          readOnly: true
+        display:
+          type: string
+          readOnly: true
+        name:
+          type: string
+          maxLength: 100
+        slug:
+          type: string
+          pattern: ^[-\w]+$
+          maxLength: 100
+        color:
+          type: string
+          pattern: ^[0-9a-f]{6}$
+          maxLength: 6
+        description:
+          type: string
+          maxLength: 200
+      required:
+      - display
+      - id
+      - name
+      - slug
+      - url
     BriefTenant:
       type: object
       description: Adds support for custom fields and tags.
@@ -123136,11 +127364,26 @@ components:
         environment_params:
           nullable: true
           title: Environment parameters
-          description: Any <a href="https://jinja.palletsprojects.com/en/3.1.x/api/#jinja2.Environment">additional
-            parameters</a> to pass when constructing the Jinja2 environment.
+          description: Any <a href="https://jinja.palletsprojects.com/en/stable/api/#jinja2.Environment">additional
+            parameters</a> to pass when constructing the Jinja environment
         template_code:
           type: string
-          description: Jinja2 template code.
+          description: Jinja template code.
+        mime_type:
+          type: string
+          description: Defaults to <code>text/plain; charset=utf-8</code>
+          maxLength: 50
+        file_name:
+          type: string
+          description: Filename to give to the rendered export file
+          maxLength: 200
+        file_extension:
+          type: string
+          description: Extension to append to the rendered filename
+          maxLength: 15
+        as_attachment:
+          type: boolean
+          description: Download file as attachment
         data_source:
           $ref: '#/components/schemas/BriefDataSource'
         data_path:
@@ -123193,12 +127436,27 @@ components:
         environment_params:
           nullable: true
           title: Environment parameters
-          description: Any <a href="https://jinja.palletsprojects.com/en/3.1.x/api/#jinja2.Environment">additional
-            parameters</a> to pass when constructing the Jinja2 environment.
+          description: Any <a href="https://jinja.palletsprojects.com/en/stable/api/#jinja2.Environment">additional
+            parameters</a> to pass when constructing the Jinja environment
         template_code:
           type: string
           minLength: 1
-          description: Jinja2 template code.
+          description: Jinja template code.
+        mime_type:
+          type: string
+          description: Defaults to <code>text/plain; charset=utf-8</code>
+          maxLength: 50
+        file_name:
+          type: string
+          description: Filename to give to the rendered export file
+          maxLength: 200
+        file_extension:
+          type: string
+          description: Extension to append to the rendered filename
+          maxLength: 15
+        as_attachment:
+          type: boolean
+          description: Download file as attachment
         data_source:
           oneOf:
           - type: integer
@@ -124290,10 +128548,10 @@ components:
         display:
           type: string
           readOnly: true
-        group:
-          allOf:
-          - $ref: '#/components/schemas/BriefContactGroup'
-          nullable: true
+        groups:
+          type: array
+          items:
+            $ref: '#/components/schemas/ContactGroup'
         name:
           type: string
           maxLength: 100
@@ -124525,6 +128783,8 @@ components:
           type: integer
           readOnly: true
           default: 0
+        comments:
+          type: string
         _depth:
           type: integer
           readOnly: true
@@ -124563,6 +128823,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -124570,13 +128832,10 @@ components:
       type: object
       description: Adds support for custom fields and tags.
       properties:
-        group:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefContactGroupRequest'
-            nullable: true
-          nullable: true
+        groups:
+          type: array
+          items:
+            type: integer
         name:
           type: string
           minLength: 1
@@ -125579,6 +129838,30 @@ components:
         description:
           type: string
           maxLength: 200
+        sync_interval:
+          enum:
+          - 1
+          - 60
+          - 720
+          - 1440
+          - 10080
+          - 43200
+          type: integer
+          description: '* `1` - Minutely
+
+            * `60` - Hourly
+
+            * `720` - 12 hours
+
+            * `1440` - Daily
+
+            * `10080` - Weekly
+
+            * `43200` - 30 days'
+          x-spec-enum-id: 2e9f2567ecd93fbe
+          nullable: true
+          minimum: 0
+          maximum: 32767
         parameters:
           nullable: true
         ignore_rules:
@@ -125647,6 +129930,30 @@ components:
         description:
           type: string
           maxLength: 200
+        sync_interval:
+          enum:
+          - 1
+          - 60
+          - 720
+          - 1440
+          - 10080
+          - 43200
+          type: integer
+          description: '* `1` - Minutely
+
+            * `60` - Hourly
+
+            * `720` - 12 hours
+
+            * `1440` - Daily
+
+            * `10080` - Weekly
+
+            * `43200` - 30 days'
+          x-spec-enum-id: 2e9f2567ecd93fbe
+          nullable: true
+          minimum: 0
+          maximum: 32767
         parameters:
           nullable: true
         ignore_rules:
@@ -126122,7 +130429,7 @@ components:
       - name
     DeviceRole:
       type: object
-      description: Adds support for custom fields and tags.
+      description: Extends PrimaryModelSerializer to include MPTT support.
       properties:
         id:
           type: integer
@@ -126156,6 +130463,10 @@ components:
           allOf:
           - $ref: '#/components/schemas/BriefConfigTemplate'
           nullable: true
+        parent:
+          allOf:
+          - $ref: '#/components/schemas/NestedDeviceRole'
+          nullable: true
         description:
           type: string
           maxLength: 200
@@ -126184,7 +130495,14 @@ components:
           type: integer
           format: int64
           readOnly: true
+        comments:
+          type: string
+        _depth:
+          type: integer
+          readOnly: true
+          title: ' depth'
       required:
+      - _depth
       - display
       - id
       - name
@@ -126192,7 +130510,7 @@ components:
       - url
     DeviceRoleRequest:
       type: object
-      description: Adds support for custom fields and tags.
+      description: Extends PrimaryModelSerializer to include MPTT support.
       properties:
         name:
           type: string
@@ -126218,6 +130536,10 @@ components:
             - $ref: '#/components/schemas/BriefConfigTemplateRequest'
             nullable: true
           nullable: true
+        parent:
+          allOf:
+          - $ref: '#/components/schemas/NestedDeviceRoleRequest'
+          nullable: true
         description:
           type: string
           maxLength: 200
@@ -126228,6 +130550,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -127364,14 +131688,22 @@ components:
         description:
           type: string
           maxLength: 200
+        environment_params:
+          nullable: true
+          title: Environment parameters
+          description: Any <a href="https://jinja.palletsprojects.com/en/stable/api/#jinja2.Environment">additional
+            parameters</a> to pass when constructing the Jinja environment
         template_code:
           type: string
-          description: Jinja2 template code. The list of objects being exported is
-            passed as a context variable named <code>queryset</code>.
+          description: Jinja template code.
         mime_type:
           type: string
           description: Defaults to <code>text/plain; charset=utf-8</code>
           maxLength: 50
+        file_name:
+          type: string
+          description: Filename to give to the rendered export file
+          maxLength: 200
         file_extension:
           type: string
           description: Extension to append to the rendered filename
@@ -127432,15 +131764,23 @@ components:
         description:
           type: string
           maxLength: 200
+        environment_params:
+          nullable: true
+          title: Environment parameters
+          description: Any <a href="https://jinja.palletsprojects.com/en/stable/api/#jinja2.Environment">additional
+            parameters</a> to pass when constructing the Jinja environment
         template_code:
           type: string
           minLength: 1
-          description: Jinja2 template code. The list of objects being exported is
-            passed as a context variable named <code>queryset</code>.
+          description: Jinja template code.
         mime_type:
           type: string
           description: Defaults to <code>text/plain; charset=utf-8</code>
           maxLength: 50
+        file_name:
+          type: string
+          description: Filename to give to the rendered export file
+          maxLength: 200
         file_extension:
           type: string
           description: Extension to append to the rendered filename
@@ -129859,9 +134199,12 @@ components:
           format: date-time
           readOnly: true
           nullable: true
+        mark_populated:
+          type: boolean
+          description: Prevent the creation of IP addresses within this range
         mark_utilized:
           type: boolean
-          description: Treat as fully utilized
+          description: Report space as 100% utilized
       required:
       - display
       - end_address
@@ -129925,9 +134268,12 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        mark_populated:
+          type: boolean
+          description: Prevent the creation of IP addresses within this range
         mark_utilized:
           type: boolean
-          description: Treat as fully utilized
+          description: Report space as 100% utilized
       required:
       - end_address
       - start_address
@@ -135399,6 +139745,7 @@ components:
               - evp-lan
               - ep-tree
               - evp-tree
+              - spb
               type: string
               description: '* `vpws` - VPWS
 
@@ -135424,8 +139771,10 @@ components:
 
                 * `ep-tree` - Ethernet Private Tree
 
-                * `evp-tree` - Ethernet Virtual Private Tree'
-              x-spec-enum-id: 4c9738ba3d741dd4
+                * `evp-tree` - Ethernet Virtual Private Tree
+
+                * `spb` - SPB'
+              x-spec-enum-id: 730136816a2885f9
             label:
               type: string
               enum:
@@ -135442,6 +139791,28 @@ components:
               - Ethernet Virtual Private LAN
               - Ethernet Private Tree
               - Ethernet Virtual Private Tree
+              - SPB
+        status:
+          type: object
+          properties:
+            value:
+              enum:
+              - active
+              - planned
+              - decommissioning
+              type: string
+              description: '* `active` - Active
+
+                * `planned` - Planned
+
+                * `decommissioning` - Decommissioning'
+              x-spec-enum-id: 937bacafb9d5d4bb
+            label:
+              type: string
+              enum:
+              - Active
+              - Planned
+              - Decommissioning
         import_targets:
           type: array
           items:
@@ -135516,6 +139887,7 @@ components:
           - evp-lan
           - ep-tree
           - evp-tree
+          - spb
           type: string
           description: '* `vpws` - VPWS
 
@@ -135541,8 +139913,22 @@ components:
 
             * `ep-tree` - Ethernet Private Tree
 
-            * `evp-tree` - Ethernet Virtual Private Tree'
-          x-spec-enum-id: 4c9738ba3d741dd4
+            * `evp-tree` - Ethernet Virtual Private Tree
+
+            * `spb` - SPB'
+          x-spec-enum-id: 730136816a2885f9
+        status:
+          enum:
+          - active
+          - planned
+          - decommissioning
+          type: string
+          description: '* `active` - Active
+
+            * `planned` - Planned
+
+            * `decommissioning` - Decommissioning'
+          x-spec-enum-id: 937bacafb9d5d4bb
         import_targets:
           type: array
           items:
@@ -135753,6 +140139,8 @@ components:
           type: integer
           format: int64
           readOnly: true
+        comments:
+          type: string
         _depth:
           type: integer
           readOnly: true
@@ -135825,6 +140213,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - site
@@ -136387,6 +140777,10 @@ components:
         display:
           type: string
           readOnly: true
+        profile:
+          allOf:
+          - $ref: '#/components/schemas/BriefModuleTypeProfile'
+          nullable: true
         manufacturer:
           $ref: '#/components/schemas/BriefManufacturer'
         model:
@@ -136469,6 +140863,8 @@ components:
         description:
           type: string
           maxLength: 200
+        attributes:
+          nullable: true
         comments:
           type: string
         tags:
@@ -136494,10 +140890,91 @@ components:
       - manufacturer
       - model
       - url
+    ModuleTypeProfile:
+      type: object
+      description: Adds support for custom fields and tags.
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        url:
+          type: string
+          format: uri
+          readOnly: true
+        display_url:
+          type: string
+          format: uri
+          readOnly: true
+        display:
+          type: string
+          readOnly: true
+        name:
+          type: string
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 200
+        schema:
+          nullable: true
+        comments:
+          type: string
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/NestedTag'
+        custom_fields:
+          type: object
+          additionalProperties: {}
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+          nullable: true
+        last_updated:
+          type: string
+          format: date-time
+          readOnly: true
+          nullable: true
+      required:
+      - display
+      - id
+      - name
+      - url
+    ModuleTypeProfileRequest:
+      type: object
+      description: Adds support for custom fields and tags.
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 200
+        schema:
+          nullable: true
+        comments:
+          type: string
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/NestedTagRequest'
+        custom_fields:
+          type: object
+          additionalProperties: {}
+      required:
+      - name
     ModuleTypeRequest:
       type: object
       description: Adds support for custom fields and tags.
       properties:
+        profile:
+          oneOf:
+          - type: integer
+          - allOf:
+            - $ref: '#/components/schemas/BriefModuleTypeProfileRequest'
+            nullable: true
+          nullable: true
         manufacturer:
           oneOf:
           - type: integer
@@ -136561,6 +141038,8 @@ components:
         description:
           type: string
           maxLength: 200
+        attributes:
+          nullable: true
         comments:
           type: string
         tags:
@@ -136683,6 +141162,54 @@ components:
           type: string
           nullable: true
           maxLength: 64
+    NestedDeviceRole:
+      type: object
+      description: 'Represents an object related through a ForeignKey field. On write,
+        it accepts a primary key (PK) value or a
+
+        dictionary of attributes which can be used to uniquely identify the related
+        object. This class should be
+
+        subclassed to return a full representation of the related object on read.'
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        url:
+          type: string
+          format: uri
+          readOnly: true
+        display_url:
+          type: string
+          format: uri
+          readOnly: true
+        display:
+          type: string
+          readOnly: true
+        name:
+          type: string
+          maxLength: 100
+      required:
+      - display
+      - id
+      - name
+      - url
+    NestedDeviceRoleRequest:
+      type: object
+      description: 'Represents an object related through a ForeignKey field. On write,
+        it accepts a primary key (PK) value or a
+
+        dictionary of attributes which can be used to uniquely identify the related
+        object. This class should be
+
+        subclassed to return a full representation of the related object on read.'
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+      required:
+      - name
     NestedGroup:
       type: object
       description: 'Represents an object related through a ForeignKey field. On write,
@@ -139483,6 +144010,29 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/ModuleType'
+    PaginatedModuleTypeProfileList:
+      type: object
+      required:
+      - count
+      - results
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=400&limit=100
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=200&limit=100
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/ModuleTypeProfile'
     PaginatedNotificationGroupList:
       type: object
       required:
@@ -140265,6 +144815,29 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Subscription'
+    PaginatedTableConfigList:
+      type: object
+      required:
+      - count
+      - results
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=400&limit=100
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=200&limit=100
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/TableConfig'
     PaginatedTagList:
       type: object
       required:
@@ -140288,6 +144861,29 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Tag'
+    PaginatedTaggedItemList:
+      type: object
+      required:
+      - count
+      - results
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=400&limit=100
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=200&limit=100
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/TaggedItem'
     PaginatedTenantGroupList:
       type: object
       required:
@@ -141220,12 +145816,27 @@ components:
         environment_params:
           nullable: true
           title: Environment parameters
-          description: Any <a href="https://jinja.palletsprojects.com/en/3.1.x/api/#jinja2.Environment">additional
-            parameters</a> to pass when constructing the Jinja2 environment.
+          description: Any <a href="https://jinja.palletsprojects.com/en/stable/api/#jinja2.Environment">additional
+            parameters</a> to pass when constructing the Jinja environment
         template_code:
           type: string
           minLength: 1
-          description: Jinja2 template code.
+          description: Jinja template code.
+        mime_type:
+          type: string
+          description: Defaults to <code>text/plain; charset=utf-8</code>
+          maxLength: 50
+        file_name:
+          type: string
+          description: Filename to give to the rendered export file
+          maxLength: 200
+        file_extension:
+          type: string
+          description: Extension to append to the rendered filename
+          maxLength: 15
+        as_attachment:
+          type: boolean
+          description: Download file as attachment
         data_source:
           oneOf:
           - type: integer
@@ -141238,13 +145849,10 @@ components:
       type: object
       description: Adds support for custom fields and tags.
       properties:
-        group:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefContactGroupRequest'
-            nullable: true
-          nullable: true
+        groups:
+          type: array
+          items:
+            type: integer
         name:
           type: string
           minLength: 1
@@ -141451,44 +146059,6 @@ components:
         description:
           type: string
           maxLength: 200
-    PatchedDeviceRoleRequest:
-      type: object
-      description: Adds support for custom fields and tags.
-      properties:
-        name:
-          type: string
-          minLength: 1
-          maxLength: 100
-        slug:
-          type: string
-          minLength: 1
-          maxLength: 100
-          pattern: ^[-a-zA-Z0-9_]+$
-        color:
-          type: string
-          minLength: 1
-          pattern: ^[0-9a-f]{6}$
-          maxLength: 6
-        vm_role:
-          type: boolean
-          description: Virtual machines may be assigned to this role
-        config_template:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefConfigTemplateRequest'
-            nullable: true
-          nullable: true
-        description:
-          type: string
-          maxLength: 200
-        tags:
-          type: array
-          items:
-            $ref: '#/components/schemas/NestedTagRequest'
-        custom_fields:
-          type: object
-          additionalProperties: {}
     PatchedExportTemplateRequest:
       type: object
       description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
@@ -141507,15 +146077,23 @@ components:
         description:
           type: string
           maxLength: 200
+        environment_params:
+          nullable: true
+          title: Environment parameters
+          description: Any <a href="https://jinja.palletsprojects.com/en/stable/api/#jinja2.Environment">additional
+            parameters</a> to pass when constructing the Jinja environment
         template_code:
           type: string
           minLength: 1
-          description: Jinja2 template code. The list of objects being exported is
-            passed as a context variable named <code>queryset</code>.
+          description: Jinja template code.
         mime_type:
           type: string
           description: Defaults to <code>text/plain; charset=utf-8</code>
           maxLength: 50
+        file_name:
+          type: string
+          description: Filename to give to the rendered export file
+          maxLength: 200
         file_extension:
           type: string
           description: Extension to append to the rendered filename
@@ -141883,6 +146461,28 @@ components:
         description:
           type: string
           maxLength: 200
+    PatchedModuleTypeProfileRequest:
+      type: object
+      description: Adds support for custom fields and tags.
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 200
+        schema:
+          nullable: true
+        comments:
+          type: string
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/NestedTagRequest'
+        custom_fields:
+          type: object
+          additionalProperties: {}
     PatchedNotificationGroupRequest:
       type: object
       description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
@@ -142363,6 +146963,50 @@ components:
           oneOf:
           - type: integer
           - $ref: '#/components/schemas/BriefUserRequest'
+    PatchedTableConfigRequest:
+      type: object
+      description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
+        on a copy of the associated instance during
+
+        validation. (DRF does not do this by default; see https://github.com/encode/django-rest-framework/issues/3144)'
+      properties:
+        object_type:
+          type: string
+        table:
+          type: string
+          minLength: 1
+          maxLength: 100
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 200
+        user:
+          type: integer
+          nullable: true
+        weight:
+          type: integer
+          maximum: 32767
+          minimum: 0
+        enabled:
+          type: boolean
+        shared:
+          type: boolean
+        columns:
+          type: array
+          items:
+            type: string
+            minLength: 1
+            maxLength: 100
+        ordering:
+          type: array
+          items:
+            type: string
+            minLength: 1
+            maxLength: 100
+          nullable: true
     PatchedTagRequest:
       type: object
       description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
@@ -142387,6 +147031,10 @@ components:
         description:
           type: string
           maxLength: 200
+        weight:
+          type: integer
+          maximum: 32767
+          minimum: 0
         object_types:
           type: array
           items:
@@ -142444,6 +147092,7 @@ components:
           nullable: true
         key:
           type: string
+          writeOnly: true
           maxLength: 40
           minLength: 40
         write_enabled:
@@ -142552,6 +147201,13 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/IntegerRangeRequest'
+        tenant:
+          oneOf:
+          - type: integer
+          - allOf:
+            - $ref: '#/components/schemas/BriefTenantRequest'
+            nullable: true
+          nullable: true
         description:
           type: string
           maxLength: 200
@@ -143655,6 +148311,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
     PatchedWritableCustomFieldChoiceSetRequest:
       type: object
       description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
@@ -143904,6 +148562,30 @@ components:
         description:
           type: string
           maxLength: 200
+        sync_interval:
+          enum:
+          - 1
+          - 60
+          - 720
+          - 1440
+          - 10080
+          - 43200
+          type: integer
+          description: '* `1` - Minutely
+
+            * `60` - Hourly
+
+            * `720` - 12 hours
+
+            * `1440` - Daily
+
+            * `10080` - Weekly
+
+            * `43200` - 30 days'
+          x-spec-enum-id: 2e9f2567ecd93fbe
+          nullable: true
+          minimum: 0
+          maximum: 32767
         parameters:
           nullable: true
         ignore_rules:
@@ -143914,6 +148596,49 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+    PatchedWritableDeviceRoleRequest:
+      type: object
+      description: Extends PrimaryModelSerializer to include MPTT support.
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        slug:
+          type: string
+          minLength: 1
+          maxLength: 100
+          pattern: ^[-a-zA-Z0-9_]+$
+        color:
+          type: string
+          minLength: 1
+          pattern: ^[0-9a-f]{6}$
+          maxLength: 6
+        vm_role:
+          type: boolean
+          description: Virtual machines may be assigned to this role
+        config_template:
+          oneOf:
+          - type: integer
+          - allOf:
+            - $ref: '#/components/schemas/BriefConfigTemplateRequest'
+            nullable: true
+          nullable: true
+        parent:
+          type: integer
+          nullable: true
+        description:
+          type: string
+          maxLength: 200
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/NestedTagRequest'
+        custom_fields:
+          type: object
+          additionalProperties: {}
+        comments:
+          type: string
     PatchedWritableDeviceTypeRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -145176,9 +149901,12 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        mark_populated:
+          type: boolean
+          description: Prevent the creation of IP addresses within this range
         mark_utilized:
           type: boolean
-          description: Treat as fully utilized
+          description: Report space as 100% utilized
     PatchedWritableIPSecPolicyRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -147279,6 +152007,7 @@ components:
           - evp-lan
           - ep-tree
           - evp-tree
+          - spb
           type: string
           description: '* `vpws` - VPWS
 
@@ -147304,8 +152033,22 @@ components:
 
             * `ep-tree` - Ethernet Private Tree
 
-            * `evp-tree` - Ethernet Virtual Private Tree'
-          x-spec-enum-id: 4c9738ba3d741dd4
+            * `evp-tree` - Ethernet Virtual Private Tree
+
+            * `spb` - SPB'
+          x-spec-enum-id: 730136816a2885f9
+        status:
+          enum:
+          - active
+          - planned
+          - decommissioning
+          type: string
+          description: '* `active` - Active
+
+            * `planned` - Planned
+
+            * `decommissioning` - Decommissioning'
+          x-spec-enum-id: 937bacafb9d5d4bb
         import_targets:
           type: array
           items:
@@ -147392,6 +152135,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
     PatchedWritableModuleRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -147452,6 +152197,13 @@ components:
       type: object
       description: Adds support for custom fields and tags.
       properties:
+        profile:
+          oneOf:
+          - type: integer
+          - allOf:
+            - $ref: '#/components/schemas/BriefModuleTypeProfileRequest'
+            nullable: true
+          nullable: true
         manufacturer:
           oneOf:
           - type: integer
@@ -147515,6 +152267,8 @@ components:
         description:
           type: string
           maxLength: 200
+        attributes:
+          nullable: true
         comments:
           type: string
         tags:
@@ -147945,6 +152699,18 @@ components:
             * `hardwired` - Hardwired
 
             * `other` - Other'
+        status:
+          enum:
+          - enabled
+          - disabled
+          - faulty
+          type: string
+          description: '* `enabled` - Enabled
+
+            * `disabled` - Disabled
+
+            * `faulty` - Faulty'
+          x-spec-enum-id: 1024f7deaed962d7
         color:
           type: string
           pattern: ^[0-9a-f]{6}$
@@ -149321,6 +154087,12 @@ components:
           minimum: 0
           nullable: true
           description: Outer dimension of rack (width)
+        outer_height:
+          type: integer
+          maximum: 32767
+          minimum: 0
+          nullable: true
+          description: Outer dimension of rack (height)
         outer_depth:
           type: integer
           maximum: 32767
@@ -149453,6 +154225,12 @@ components:
           minimum: 0
           nullable: true
           description: Outer dimension of rack (width)
+        outer_height:
+          type: integer
+          maximum: 32767
+          minimum: 0
+          nullable: true
+          description: Outer dimension of rack (height)
         outer_depth:
           type: integer
           maximum: 32767
@@ -149984,24 +154762,19 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
     PatchedWritableServiceRequest:
       type: object
       description: Adds support for custom fields and tags.
       properties:
-        device:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefDeviceRequest'
-            nullable: true
-          nullable: true
-        virtual_machine:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefVirtualMachineRequest'
-            nullable: true
-          nullable: true
+        parent_object_type:
+          type: string
+        parent_object_id:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: 0
+          format: int64
         name:
           type: string
           minLength: 1
@@ -150106,6 +154879,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
     PatchedWritableSiteRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -150235,6 +155010,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
     PatchedWritableTunnelRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -150893,6 +155670,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
     PatchedWritableWirelessLANRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -151927,6 +156706,27 @@ components:
               - Hardwired
               - Other
           nullable: true
+        status:
+          type: object
+          properties:
+            value:
+              enum:
+              - enabled
+              - disabled
+              - faulty
+              type: string
+              description: '* `enabled` - Enabled
+
+                * `disabled` - Disabled
+
+                * `faulty` - Faulty'
+              x-spec-enum-id: 1024f7deaed962d7
+            label:
+              type: string
+              enum:
+              - Enabled
+              - Disabled
+              - Faulty
         color:
           type: string
           pattern: ^[0-9a-f]{6}$
@@ -152345,6 +157145,18 @@ components:
             * `other` - Other'
           x-spec-enum-id: f8c08053f2db8830
           nullable: true
+        status:
+          enum:
+          - enabled
+          - disabled
+          - faulty
+          type: string
+          description: '* `enabled` - Enabled
+
+            * `disabled` - Disabled
+
+            * `faulty` - Faulty'
+          x-spec-enum-id: 1024f7deaed962d7
         color:
           type: string
           pattern: ^[0-9a-f]{6}$
@@ -155856,6 +160668,12 @@ components:
           minimum: 0
           nullable: true
           description: Outer dimension of rack (width)
+        outer_height:
+          type: integer
+          maximum: 32767
+          minimum: 0
+          nullable: true
+          description: Outer dimension of rack (height)
         outer_depth:
           type: integer
           maximum: 32767
@@ -156106,6 +160924,12 @@ components:
           minimum: 0
           nullable: true
           description: Outer dimension of rack (width)
+        outer_height:
+          type: integer
+          maximum: 32767
+          minimum: 0
+          nullable: true
+          description: Outer dimension of rack (height)
         outer_depth:
           type: integer
           maximum: 32767
@@ -156465,6 +161289,12 @@ components:
           minimum: 0
           nullable: true
           description: Outer dimension of rack (width)
+        outer_height:
+          type: integer
+          maximum: 32767
+          minimum: 0
+          nullable: true
+          description: Outer dimension of rack (height)
         outer_depth:
           type: integer
           maximum: 32767
@@ -156646,6 +161476,12 @@ components:
           minimum: 0
           nullable: true
           description: Outer dimension of rack (width)
+        outer_height:
+          type: integer
+          maximum: 32767
+          minimum: 0
+          nullable: true
+          description: Outer dimension of rack (height)
         outer_depth:
           type: integer
           maximum: 32767
@@ -157906,6 +162742,8 @@ components:
           type: integer
           format: int64
           readOnly: true
+        comments:
+          type: string
         _depth:
           type: integer
           readOnly: true
@@ -157944,6 +162782,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -158311,14 +163151,16 @@ components:
         display:
           type: string
           readOnly: true
-        device:
-          allOf:
-          - $ref: '#/components/schemas/BriefDevice'
+        parent_object_type:
+          type: string
+        parent_object_id:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: 0
+          format: int64
+        parent:
           nullable: true
-        virtual_machine:
-          allOf:
-          - $ref: '#/components/schemas/BriefVirtualMachine'
-          nullable: true
+          readOnly: true
         name:
           type: string
           maxLength: 100
@@ -158380,26 +163222,21 @@ components:
       - display
       - id
       - name
+      - parent_object_id
+      - parent_object_type
       - ports
       - url
     ServiceRequest:
       type: object
       description: Adds support for custom fields and tags.
       properties:
-        device:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefDeviceRequest'
-            nullable: true
-          nullable: true
-        virtual_machine:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefVirtualMachineRequest'
-            nullable: true
-          nullable: true
+        parent_object_type:
+          type: string
+        parent_object_id:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: 0
+          format: int64
         name:
           type: string
           minLength: 1
@@ -158441,6 +163278,8 @@ components:
           additionalProperties: {}
       required:
       - name
+      - parent_object_id
+      - parent_object_type
       - ports
     ServiceTemplate:
       type: object
@@ -158774,6 +163613,8 @@ components:
           type: integer
           format: int64
           readOnly: true
+        comments:
+          type: string
         _depth:
           type: integer
           readOnly: true
@@ -158812,6 +163653,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -158983,6 +163826,127 @@ components:
       - object_id
       - object_type
       - user
+    TableConfig:
+      type: object
+      description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
+        on a copy of the associated instance during
+
+        validation. (DRF does not do this by default; see https://github.com/encode/django-rest-framework/issues/3144)'
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        url:
+          type: string
+          format: uri
+          readOnly: true
+        display_url:
+          type: string
+          format: uri
+          readOnly: true
+        display:
+          type: string
+          readOnly: true
+        object_type:
+          type: string
+        table:
+          type: string
+          maxLength: 100
+        name:
+          type: string
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 200
+        user:
+          type: integer
+          nullable: true
+        weight:
+          type: integer
+          maximum: 32767
+          minimum: 0
+        enabled:
+          type: boolean
+        shared:
+          type: boolean
+        columns:
+          type: array
+          items:
+            type: string
+            maxLength: 100
+        ordering:
+          type: array
+          items:
+            type: string
+            maxLength: 100
+          nullable: true
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+          nullable: true
+        last_updated:
+          type: string
+          format: date-time
+          readOnly: true
+          nullable: true
+      required:
+      - columns
+      - display
+      - id
+      - name
+      - object_type
+      - table
+      - url
+    TableConfigRequest:
+      type: object
+      description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
+        on a copy of the associated instance during
+
+        validation. (DRF does not do this by default; see https://github.com/encode/django-rest-framework/issues/3144)'
+      properties:
+        object_type:
+          type: string
+        table:
+          type: string
+          minLength: 1
+          maxLength: 100
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 200
+        user:
+          type: integer
+          nullable: true
+        weight:
+          type: integer
+          maximum: 32767
+          minimum: 0
+        enabled:
+          type: boolean
+        shared:
+          type: boolean
+        columns:
+          type: array
+          items:
+            type: string
+            minLength: 1
+            maxLength: 100
+        ordering:
+          type: array
+          items:
+            type: string
+            minLength: 1
+            maxLength: 100
+          nullable: true
+      required:
+      - columns
+      - name
+      - object_type
+      - table
     Tag:
       type: object
       description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
@@ -159018,6 +163982,10 @@ components:
         description:
           type: string
           maxLength: 200
+        weight:
+          type: integer
+          maximum: 32767
+          minimum: 0
         object_types:
           type: array
           items:
@@ -159066,6 +164034,10 @@ components:
         description:
           type: string
           maxLength: 200
+        weight:
+          type: integer
+          maximum: 32767
+          minimum: 0
         object_types:
           type: array
           items:
@@ -159073,6 +164045,40 @@ components:
       required:
       - name
       - slug
+    TaggedItem:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        url:
+          type: string
+          format: uri
+          readOnly: true
+        display:
+          type: string
+          readOnly: true
+        object_type:
+          type: string
+          readOnly: true
+        object_id:
+          type: integer
+          maximum: 2147483647
+          minimum: -2147483648
+        object:
+          readOnly: true
+        tag:
+          allOf:
+          - $ref: '#/components/schemas/BriefTag'
+          readOnly: true
+      required:
+      - display
+      - id
+      - object
+      - object_id
+      - object_type
+      - tag
+      - url
     Tenant:
       type: object
       description: Adds support for custom fields and tags.
@@ -159223,6 +164229,8 @@ components:
           type: integer
           readOnly: true
           default: 0
+        comments:
+          type: string
         _depth:
           type: integer
           readOnly: true
@@ -159261,6 +164269,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -159334,10 +164344,6 @@ components:
           type: string
           format: date-time
           nullable: true
-        key:
-          type: string
-          maxLength: 40
-          minLength: 40
         write_enabled:
           type: boolean
           description: Permit create/update/delete operations using this key
@@ -159451,6 +164457,7 @@ components:
           nullable: true
         key:
           type: string
+          writeOnly: true
           maxLength: 40
           minLength: 40
         write_enabled:
@@ -160176,6 +165183,10 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/IntegerRange'
+        tenant:
+          allOf:
+          - $ref: '#/components/schemas/BriefTenant'
+          nullable: true
         description:
           type: string
           maxLength: 200
@@ -160233,6 +165244,13 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/IntegerRangeRequest'
+        tenant:
+          oneOf:
+          - type: integer
+          - allOf:
+            - $ref: '#/components/schemas/BriefTenantRequest'
+            nullable: true
+          nullable: true
         description:
           type: string
           maxLength: 200
@@ -162181,6 +167199,8 @@ components:
           type: integer
           readOnly: true
           default: 0
+        comments:
+          type: string
         _depth:
           type: integer
           readOnly: true
@@ -162219,6 +167239,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -163505,6 +168527,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -163763,6 +168787,30 @@ components:
         description:
           type: string
           maxLength: 200
+        sync_interval:
+          enum:
+          - 1
+          - 60
+          - 720
+          - 1440
+          - 10080
+          - 43200
+          type: integer
+          description: '* `1` - Minutely
+
+            * `60` - Hourly
+
+            * `720` - 12 hours
+
+            * `1440` - Daily
+
+            * `10080` - Weekly
+
+            * `43200` - 30 days'
+          x-spec-enum-id: 2e9f2567ecd93fbe
+          nullable: true
+          minimum: 0
+          maximum: 32767
         parameters:
           nullable: true
         ignore_rules:
@@ -163777,6 +168825,52 @@ components:
       - name
       - source_url
       - type
+    WritableDeviceRoleRequest:
+      type: object
+      description: Extends PrimaryModelSerializer to include MPTT support.
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        slug:
+          type: string
+          minLength: 1
+          maxLength: 100
+          pattern: ^[-a-zA-Z0-9_]+$
+        color:
+          type: string
+          minLength: 1
+          pattern: ^[0-9a-f]{6}$
+          maxLength: 6
+        vm_role:
+          type: boolean
+          description: Virtual machines may be assigned to this role
+        config_template:
+          oneOf:
+          - type: integer
+          - allOf:
+            - $ref: '#/components/schemas/BriefConfigTemplateRequest'
+            nullable: true
+          nullable: true
+        parent:
+          type: integer
+          nullable: true
+        description:
+          type: string
+          maxLength: 200
+        tags:
+          type: array
+          items:
+            $ref: '#/components/schemas/NestedTagRequest'
+        custom_fields:
+          type: object
+          additionalProperties: {}
+        comments:
+          type: string
+      required:
+      - name
+      - slug
     WritableDeviceTypeRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -165070,9 +170164,12 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        mark_populated:
+          type: boolean
+          description: Prevent the creation of IP addresses within this range
         mark_utilized:
           type: boolean
-          description: Treat as fully utilized
+          description: Report space as 100% utilized
       required:
       - end_address
       - start_address
@@ -167199,6 +172296,7 @@ components:
           - evp-lan
           - ep-tree
           - evp-tree
+          - spb
           type: string
           description: '* `vpws` - VPWS
 
@@ -167224,8 +172322,22 @@ components:
 
             * `ep-tree` - Ethernet Private Tree
 
-            * `evp-tree` - Ethernet Virtual Private Tree'
-          x-spec-enum-id: 4c9738ba3d741dd4
+            * `evp-tree` - Ethernet Virtual Private Tree
+
+            * `spb` - SPB'
+          x-spec-enum-id: 730136816a2885f9
+        status:
+          enum:
+          - active
+          - planned
+          - decommissioning
+          type: string
+          description: '* `active` - Active
+
+            * `planned` - Planned
+
+            * `decommissioning` - Decommissioning'
+          x-spec-enum-id: 937bacafb9d5d4bb
         import_targets:
           type: array
           items:
@@ -167316,6 +172428,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - site
@@ -167384,6 +172498,13 @@ components:
       type: object
       description: Adds support for custom fields and tags.
       properties:
+        profile:
+          oneOf:
+          - type: integer
+          - allOf:
+            - $ref: '#/components/schemas/BriefModuleTypeProfileRequest'
+            nullable: true
+          nullable: true
         manufacturer:
           oneOf:
           - type: integer
@@ -167447,6 +172568,8 @@ components:
         description:
           type: string
           maxLength: 200
+        attributes:
+          nullable: true
         comments:
           type: string
         tags:
@@ -167883,6 +173006,18 @@ components:
             * `hardwired` - Hardwired
 
             * `other` - Other'
+        status:
+          enum:
+          - enabled
+          - disabled
+          - faulty
+          type: string
+          description: '* `enabled` - Enabled
+
+            * `disabled` - Disabled
+
+            * `faulty` - Faulty'
+          x-spec-enum-id: 1024f7deaed962d7
         color:
           type: string
           pattern: ^[0-9a-f]{6}$
@@ -169271,6 +174406,12 @@ components:
           minimum: 0
           nullable: true
           description: Outer dimension of rack (width)
+        outer_height:
+          type: integer
+          maximum: 32767
+          minimum: 0
+          nullable: true
+          description: Outer dimension of rack (height)
         outer_depth:
           type: integer
           maximum: 32767
@@ -169406,6 +174547,12 @@ components:
           minimum: 0
           nullable: true
           description: Outer dimension of rack (width)
+        outer_height:
+          type: integer
+          maximum: 32767
+          minimum: 0
+          nullable: true
+          description: Outer dimension of rack (height)
         outer_depth:
           type: integer
           maximum: 32767
@@ -169949,6 +175096,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -169956,20 +175105,13 @@ components:
       type: object
       description: Adds support for custom fields and tags.
       properties:
-        device:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefDeviceRequest'
-            nullable: true
-          nullable: true
-        virtual_machine:
-          oneOf:
-          - type: integer
-          - allOf:
-            - $ref: '#/components/schemas/BriefVirtualMachineRequest'
-            nullable: true
-          nullable: true
+        parent_object_type:
+          type: string
+        parent_object_id:
+          type: integer
+          maximum: 9223372036854775807
+          minimum: 0
+          format: int64
         name:
           type: string
           minLength: 1
@@ -170011,6 +175153,8 @@ components:
           additionalProperties: {}
       required:
       - name
+      - parent_object_id
+      - parent_object_type
       - ports
       - protocol
     WritableServiceTemplateRequest:
@@ -170082,6 +175226,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -170217,6 +175363,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug
@@ -170905,6 +176053,8 @@ components:
         custom_fields:
           type: object
           additionalProperties: {}
+        comments:
+          type: string
       required:
       - name
       - slug

@@ -18,11 +18,11 @@ init:
 
 .PHONY: up
 up:
-	DOCKER_BUILDKIT=1 docker compose up -d --build
+	DOCKER_BUILDKIT=1 docker-compose up -d --build
 
 .PHONY: down
 down:
-	docker compose down
+	docker-compose down
 
 .PHONY: shell
 shell:
@@ -32,7 +32,7 @@ shell:
 .PHONY: build
 build:
 	$(EXEC) ./scripts/set-versions.sh $(NETBOX_VERSION) $(NETBOX_DOCKER_VERSION)
-#	./scripts/fetch-spec.sh $$(cat api/netbox_version) $$(cat api/netbox_docker_version)
+	./scripts/fetch-spec.sh $$(cat api/netbox_version) $$(cat api/netbox_docker_version)
 	$(EXEC) ./scripts/fix-spec.py
 	./scripts/generate-code.sh
 	$(EXEC) go mod tidy
