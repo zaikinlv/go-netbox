@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: NetBox REST API
-  version: 4.2.6-Docker-3.2.0 (4.2)
+  version: 4.2.9-Docker-3.2.1 (4.2)
   license:
     name: Apache v2 License
 paths:
@@ -24014,6 +24014,22 @@ paths:
           type: boolean
         description: Has local config context data
       - in: query
+        name: location
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: location__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
         name: location_id
         schema:
           type: array
@@ -24667,6 +24683,24 @@ paths:
           type: boolean
         description: Has power ports
       - in: query
+        name: primary_ip4
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv4 (address)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip4__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv4 (address)
+        explode: true
+        style: form
+      - in: query
         name: primary_ip4_id
         schema:
           type: array
@@ -24682,6 +24716,24 @@ paths:
           items:
             type: integer
         description: Primary IPv4 (ID)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip6
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv6 (address)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip6__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv6 (address)
         explode: true
         style: form
       - in: query
@@ -28918,7 +28970,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -28931,7 +28983,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -28940,7 +28992,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -28949,7 +29001,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -28958,7 +29010,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -28967,7 +29019,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -28976,7 +29028,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -28985,7 +29037,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -28994,7 +29046,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -29003,7 +29055,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -30165,24 +30217,118 @@ paths:
       - in: query
         name: mode
         schema:
-          type: string
-          x-spec-enum-id: b6fe48fe21dbf01d
-          nullable: true
-          enum:
-          - access
-          - q-in-q
-          - tagged
-          - tagged-all
-        description: 'IEEE 802.1Q tagging strategy
-
-
-          * `access` - Access
-
-          * `tagged` - Tagged
-
-          * `tagged-all` - Tagged (All)
-
-          * `q-in-q` - Q-in-Q (802.1ad)'
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__empty
+        schema:
+          type: boolean
+        description: 802.1Q Mode
+      - in: query
+        name: mode__ic
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__ie
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__iew
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__isw
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__n
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__nic
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__nie
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__niew
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__nisw
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
       - in: query
         name: modified_by_request
         schema:
@@ -31256,7 +31402,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31269,7 +31415,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31278,7 +31424,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31287,7 +31433,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31296,7 +31442,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31305,7 +31451,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31314,7 +31460,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31323,7 +31469,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31332,7 +31478,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -31341,7 +31487,7 @@ paths:
           type: array
           items:
             type: string
-            x-spec-enum-id: 4b917ee05489852b
+            x-spec-enum-id: 017cd578206eb6ae
         explode: true
         style: form
       - in: query
@@ -41343,6 +41489,26 @@ paths:
         explode: true
         style: form
       - in: query
+        name: device
+        schema:
+          type: array
+          items:
+            type: string
+            nullable: true
+        description: Device (name)
+        explode: true
+        style: form
+      - in: query
+        name: device__n
+        schema:
+          type: array
+          items:
+            type: string
+            nullable: true
+        description: Device (name)
+        explode: true
+        style: form
+      - in: query
         name: device_id
         schema:
           type: array
@@ -41488,6 +41654,42 @@ paths:
         schema:
           type: integer
       - in: query
+        name: location
+        schema:
+          type: array
+          items:
+            type: string
+        description: Location (slug)
+        explode: true
+        style: form
+      - in: query
+        name: location__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Location (slug)
+        explode: true
+        style: form
+      - in: query
+        name: location_id
+        schema:
+          type: array
+          items:
+            type: integer
+        description: Location (ID)
+        explode: true
+        style: form
+      - in: query
+        name: location_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        description: Location (ID)
+        explode: true
+        style: form
+      - in: query
         name: manufacturer
         schema:
           type: array
@@ -41598,6 +41800,74 @@ paths:
           type: string
         description: Search
       - in: query
+        name: rack
+        schema:
+          type: array
+          items:
+            type: string
+        description: Rack (name)
+        explode: true
+        style: form
+      - in: query
+        name: rack__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Rack (name)
+        explode: true
+        style: form
+      - in: query
+        name: rack_id
+        schema:
+          type: array
+          items:
+            type: integer
+        description: Rack (ID)
+        explode: true
+        style: form
+      - in: query
+        name: rack_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        description: Rack (ID)
+        explode: true
+        style: form
+      - in: query
+        name: region
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: region__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: region_id
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: region_id__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
         name: serial
         schema:
           type: array
@@ -41679,6 +41949,74 @@ paths:
           type: array
           items:
             type: string
+        explode: true
+        style: form
+      - in: query
+        name: site
+        schema:
+          type: array
+          items:
+            type: string
+        description: Site name (slug)
+        explode: true
+        style: form
+      - in: query
+        name: site__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Site name (slug)
+        explode: true
+        style: form
+      - in: query
+        name: site_group
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: site_group__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: site_group_id
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: site_group_id__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: site_id
+        schema:
+          type: array
+          items:
+            type: integer
+        description: Site (ID)
+        explode: true
+        style: form
+      - in: query
+        name: site_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        description: Site (ID)
         explode: true
         style: form
       - in: query
@@ -61750,6 +62088,24 @@ paths:
         schema:
           type: string
       - in: query
+        name: primary_ip4
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv4 (address)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip4__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv4 (address)
+        explode: true
+        style: form
+      - in: query
         name: primary_ip4_id
         schema:
           type: array
@@ -61765,6 +62121,24 @@ paths:
           items:
             type: integer
         description: Primary IPv4 (ID)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip6
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv6 (address)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip6__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv6 (address)
         explode: true
         style: form
       - in: query
@@ -82211,6 +82585,42 @@ paths:
           type: string
           format: uuid
       - in: query
+        name: vlan_group
+        schema:
+          type: array
+          items:
+            type: string
+        description: VLAN Group (slug)
+        explode: true
+        style: form
+      - in: query
+        name: vlan_group__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: VLAN Group (slug)
+        explode: true
+        style: form
+      - in: query
+        name: vlan_group_id
+        schema:
+          type: array
+          items:
+            type: integer
+        description: VLAN Group (ID)
+        explode: true
+        style: form
+      - in: query
+        name: vlan_group_id__n
+        schema:
+          type: array
+          items:
+            type: integer
+        description: VLAN Group (ID)
+        explode: true
+        style: form
+      - in: query
         name: vlan_id
         schema:
           type: array
@@ -101529,24 +101939,118 @@ paths:
       - in: query
         name: mode
         schema:
-          type: string
-          x-spec-enum-id: b6fe48fe21dbf01d
-          nullable: true
-          enum:
-          - access
-          - q-in-q
-          - tagged
-          - tagged-all
-        description: 'IEEE 802.1Q tagging strategy
-
-
-          * `access` - Access
-
-          * `tagged` - Tagged
-
-          * `tagged-all` - Tagged (All)
-
-          * `q-in-q` - Q-in-Q (802.1ad)'
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__empty
+        schema:
+          type: boolean
+        description: 802.1Q Mode
+      - in: query
+        name: mode__ic
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__ie
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__iew
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__isw
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__n
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__nic
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__nie
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__niew
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
+      - in: query
+        name: mode__nisw
+        schema:
+          type: array
+          items:
+            type: string
+            x-spec-enum-id: b6fe48fe21dbf01d
+            nullable: true
+        description: 802.1Q Mode
+        explode: true
+        style: form
       - in: query
         name: modified_by_request
         schema:
@@ -103767,6 +104271,24 @@ paths:
         explode: true
         style: form
       - in: query
+        name: primary_ip4
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv4 (address)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip4__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv4 (address)
+        explode: true
+        style: form
+      - in: query
         name: primary_ip4_id
         schema:
           type: array
@@ -103782,6 +104304,24 @@ paths:
           items:
             type: integer
         description: Primary IPv4 (ID)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip6
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv6 (address)
+        explode: true
+        style: form
+      - in: query
+        name: primary_ip6__n
+        schema:
+          type: array
+          items:
+            type: string
+        description: Primary IPv6 (address)
         explode: true
         style: form
       - in: query
@@ -130220,6 +130760,7 @@ components:
               - e3
               - xdsl
               - docsis
+              - moca
               - bpon
               - epon
               - 10g-epon
@@ -130457,6 +130998,8 @@ components:
 
                 * `docsis` - DOCSIS
 
+                * `moca` - MoCA
+
                 * `bpon` - BPON (622 Mbps / 155 Mbps)
 
                 * `epon` - EPON (1 Gbps)
@@ -130504,7 +131047,7 @@ components:
                 * `extreme-summitstack-512` - Extreme SummitStack-512
 
                 * `other` - Other'
-              x-spec-enum-id: 4b917ee05489852b
+              x-spec-enum-id: 017cd578206eb6ae
             label:
               type: string
               enum:
@@ -130614,6 +131157,7 @@ components:
               - E3 (34 Mbps)
               - xDSL
               - DOCSIS
+              - MoCA
               - BPON (622 Mbps / 155 Mbps)
               - EPON (1 Gbps)
               - 10G-EPON (10 Gbps)
@@ -131878,6 +132422,7 @@ components:
           - e3
           - xdsl
           - docsis
+          - moca
           - bpon
           - epon
           - 10g-epon
@@ -132115,6 +132660,8 @@ components:
 
             * `docsis` - DOCSIS
 
+            * `moca` - MoCA
+
             * `bpon` - BPON (622 Mbps / 155 Mbps)
 
             * `epon` - EPON (1 Gbps)
@@ -132162,7 +132709,7 @@ components:
             * `extreme-summitstack-512` - Extreme SummitStack-512
 
             * `other` - Other'
-          x-spec-enum-id: 4b917ee05489852b
+          x-spec-enum-id: 017cd578206eb6ae
         enabled:
           type: boolean
         parent:
@@ -133099,6 +133646,7 @@ components:
               - e3
               - xdsl
               - docsis
+              - moca
               - bpon
               - epon
               - 10g-epon
@@ -133336,6 +133884,8 @@ components:
 
                 * `docsis` - DOCSIS
 
+                * `moca` - MoCA
+
                 * `bpon` - BPON (622 Mbps / 155 Mbps)
 
                 * `epon` - EPON (1 Gbps)
@@ -133383,7 +133933,7 @@ components:
                 * `extreme-summitstack-512` - Extreme SummitStack-512
 
                 * `other` - Other'
-              x-spec-enum-id: 4b917ee05489852b
+              x-spec-enum-id: 017cd578206eb6ae
             label:
               type: string
               enum:
@@ -133493,6 +134043,7 @@ components:
               - E3 (34 Mbps)
               - xDSL
               - DOCSIS
+              - MoCA
               - BPON (622 Mbps / 155 Mbps)
               - EPON (1 Gbps)
               - 10G-EPON (10 Gbps)
@@ -133765,6 +134316,7 @@ components:
           - e3
           - xdsl
           - docsis
+          - moca
           - bpon
           - epon
           - 10g-epon
@@ -134002,6 +134554,8 @@ components:
 
             * `docsis` - DOCSIS
 
+            * `moca` - MoCA
+
             * `bpon` - BPON (622 Mbps / 155 Mbps)
 
             * `epon` - EPON (1 Gbps)
@@ -134049,7 +134603,7 @@ components:
             * `extreme-summitstack-512` - Extreme SummitStack-512
 
             * `other` - Other'
-          x-spec-enum-id: 4b917ee05489852b
+          x-spec-enum-id: 017cd578206eb6ae
         enabled:
           type: boolean
         mgmt_only:
@@ -144987,6 +145541,7 @@ components:
           - e3
           - xdsl
           - docsis
+          - moca
           - bpon
           - epon
           - 10g-epon
@@ -145224,6 +145779,8 @@ components:
 
             * `docsis` - DOCSIS
 
+            * `moca` - MoCA
+
             * `bpon` - BPON (622 Mbps / 155 Mbps)
 
             * `epon` - EPON (1 Gbps)
@@ -145271,7 +145828,7 @@ components:
             * `extreme-summitstack-512` - Extreme SummitStack-512
 
             * `other` - Other'
-          x-spec-enum-id: 4b917ee05489852b
+          x-spec-enum-id: 017cd578206eb6ae
         enabled:
           type: boolean
         parent:
@@ -146208,6 +146765,7 @@ components:
           - e3
           - xdsl
           - docsis
+          - moca
           - bpon
           - epon
           - 10g-epon
@@ -146445,6 +147003,8 @@ components:
 
             * `docsis` - DOCSIS
 
+            * `moca` - MoCA
+
             * `bpon` - BPON (622 Mbps / 155 Mbps)
 
             * `epon` - EPON (1 Gbps)
@@ -146492,7 +147052,7 @@ components:
             * `extreme-summitstack-512` - Extreme SummitStack-512
 
             * `other` - Other'
-          x-spec-enum-id: 4b917ee05489852b
+          x-spec-enum-id: 017cd578206eb6ae
         enabled:
           type: boolean
         mgmt_only:
@@ -164887,6 +165447,7 @@ components:
           - e3
           - xdsl
           - docsis
+          - moca
           - bpon
           - epon
           - 10g-epon
@@ -165124,6 +165685,8 @@ components:
 
             * `docsis` - DOCSIS
 
+            * `moca` - MoCA
+
             * `bpon` - BPON (622 Mbps / 155 Mbps)
 
             * `epon` - EPON (1 Gbps)
@@ -165171,7 +165734,7 @@ components:
             * `extreme-summitstack-512` - Extreme SummitStack-512
 
             * `other` - Other'
-          x-spec-enum-id: 4b917ee05489852b
+          x-spec-enum-id: 017cd578206eb6ae
         enabled:
           type: boolean
         parent:
@@ -166112,6 +166675,7 @@ components:
           - e3
           - xdsl
           - docsis
+          - moca
           - bpon
           - epon
           - 10g-epon
@@ -166349,6 +166913,8 @@ components:
 
             * `docsis` - DOCSIS
 
+            * `moca` - MoCA
+
             * `bpon` - BPON (622 Mbps / 155 Mbps)
 
             * `epon` - EPON (1 Gbps)
@@ -166396,7 +166962,7 @@ components:
             * `extreme-summitstack-512` - Extreme SummitStack-512
 
             * `other` - Other'
-          x-spec-enum-id: 4b917ee05489852b
+          x-spec-enum-id: 017cd578206eb6ae
         enabled:
           type: boolean
         mgmt_only:
